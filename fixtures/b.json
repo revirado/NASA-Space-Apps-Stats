@@ -1,0 +1,2815 @@
+[
+ {
+  "data": {
+   "openLocations": {
+    "totalCount": 600,
+    "edges": [
+     {
+      "cursor": "b2Zmc2V0OjUwMA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         33.857142857142854,
+         42.714285714285715
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNTE=",
+        "title": "Kastamonu",
+        "displayName": "Kastamonu",
+        "country": "Turkey",
+        "cachedRegistrations": 51,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/kastamonu"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUwMQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         38.857142857142854,
+         37
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNTI=",
+        "title": "Kayseri",
+        "displayName": "Kayseri",
+        "country": "Turkey",
+        "cachedRegistrations": 71,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/kayseri"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUwMg==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         39.142857142857146,
+         38.142857142857146
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNTM=",
+        "title": "Konya",
+        "displayName": "Konya",
+        "country": "Turkey",
+        "cachedRegistrations": 595,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/konya"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUwMw==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         36.42857142857143,
+         40.42857142857143
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNTQ=",
+        "title": "Malatya",
+        "displayName": "Malatya",
+        "country": "Turkey",
+        "cachedRegistrations": 34,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/malatya"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUwNA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         35.285714285714285,
+         39.142857142857146
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNTU=",
+        "title": "Mersin",
+        "displayName": "Mersin",
+        "country": "Turkey",
+        "cachedRegistrations": 87,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/mersin"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUwNQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         37.714285714285715,
+         36.57142857142857
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNTY=",
+        "title": "Ordu",
+        "displayName": "Ordu",
+        "country": "Turkey",
+        "cachedRegistrations": 75,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/ordu"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUwNg==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         35,
+         42
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNTc=",
+        "title": "Rize",
+        "displayName": "Rize",
+        "country": "Turkey",
+        "cachedRegistrations": 386,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/rize"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUwNw==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         33.714285714285715,
+         39
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNTg=",
+        "title": "Samsun",
+        "displayName": "Samsun",
+        "country": "Turkey",
+        "cachedRegistrations": 413,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/samsun"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUwOA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         38.7955,
+         37.1674
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNTk=",
+        "title": "Şanlıurfa",
+        "displayName": "Şanlıurfa",
+        "country": "Turkey",
+        "cachedRegistrations": 11,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/sanl-urfa"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUwOQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         33.857142857142854,
+         40.857142857142854
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNjA=",
+        "title": "Sinop",
+        "displayName": "Sinop",
+        "country": "Turkey",
+        "cachedRegistrations": 31,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/sinop"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUxMA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         35.857142857142854,
+         41.857142857142854
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNjE=",
+        "title": "Sivas",
+        "displayName": "Sivas",
+        "country": "Turkey",
+        "cachedRegistrations": 72,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": false,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": true,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/sivas"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUxMQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         31.857142857142858,
+         42.857142857142854
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNjI=",
+        "title": "Tokat",
+        "displayName": "Tokat",
+        "country": "Turkey",
+        "cachedRegistrations": 479,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/tokat"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUxMg==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         33.857142857142854,
+         39.285714285714285
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNjM=",
+        "title": "Trabzon",
+        "displayName": "Trabzon",
+        "country": "Turkey",
+        "cachedRegistrations": 32,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/trabzon"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUxMw==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         32.714285714285715,
+         0.7142857142857143
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNjQ=",
+        "title": "Entebbe",
+        "displayName": "Entebbe",
+        "country": "Uganda",
+        "cachedRegistrations": 40,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/entebbe"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUxNA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         31.142857142857142,
+         3.142857142857143
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNjU=",
+        "title": "Kampala",
+        "displayName": "Kampala",
+        "country": "Uganda",
+        "cachedRegistrations": 44,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/kampala"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUxNQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         32.285714285714285,
+         49
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNjY=",
+        "title": "Kyiv",
+        "displayName": "Kyiv",
+        "country": "Ukraine",
+        "cachedRegistrations": 192,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/kyiv"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUxNg==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         33.857142857142854,
+         51.57142857142857
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNjc=",
+        "title": "Lviv",
+        "displayName": "Lviv",
+        "country": "Ukraine",
+        "cachedRegistrations": 93,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/lviv"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUxNw==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         34.57142857142857,
+         48.57142857142857
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNjg=",
+        "title": "Odesa",
+        "displayName": "Odesa",
+        "country": "Ukraine",
+        "cachedRegistrations": 135,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/odesa"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUxOA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         55.285714285714285,
+         24.142857142857142
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNjk=",
+        "title": "Abu Dhabi",
+        "displayName": "Abu Dhabi",
+        "country": "United Arab Emirates",
+        "cachedRegistrations": 63,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/abu-dhabi"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUxOQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         54.857142857142854,
+         23.571428571428573
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNzA=",
+        "title": "Dubai",
+        "displayName": "Dubai",
+        "country": "United Arab Emirates",
+        "cachedRegistrations": 122,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/dubai"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUyMA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         54.857142857142854,
+         25.142857142857142
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNzE=",
+        "title": "Sharjah",
+        "displayName": "Sharjah",
+        "country": "United Arab Emirates",
+        "cachedRegistrations": 210,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/sharjah"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUyMQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -4.571428571428571,
+         53.142857142857146
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNzI=",
+        "title": "Birmingham",
+        "displayName": "Birmingham",
+        "country": "United Kingdom",
+        "cachedRegistrations": 175,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/birmingham"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUyMg==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -2,
+         57
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNzM=",
+        "title": "Edinburgh",
+        "displayName": "Edinburgh",
+        "country": "United Kingdom",
+        "cachedRegistrations": 234,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/edinburgh"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUyMw==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -4,
+         51.42857142857143
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNzQ=",
+        "title": "Glasgow",
+        "displayName": "Glasgow",
+        "country": "United Kingdom",
+        "cachedRegistrations": 65,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": false,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": true,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/glasgow"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUyNA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -2.7142857142857144,
+         56.42857142857143
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNzU=",
+        "title": "Liverpool",
+        "displayName": "Liverpool",
+        "country": "United Kingdom",
+        "cachedRegistrations": 100,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/liverpool"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUyNQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -5.857142857142857,
+         52.285714285714285
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNzY=",
+        "title": "London",
+        "displayName": "London",
+        "country": "United Kingdom",
+        "cachedRegistrations": 135,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/london"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUyNg==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -1.2857142857142858,
+         57.42857142857143
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNzc=",
+        "title": "Manchester",
+        "displayName": "Manchester",
+        "country": "United Kingdom",
+        "cachedRegistrations": 65,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/manchester"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUyNw==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -94.28571428571429,
+         36.714285714285715
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNzg=",
+        "title": "Albany",
+        "displayName": "Albany",
+        "country": "United States",
+        "cachedRegistrations": 19,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/albany"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUyOA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -97.28571428571429,
+         34.42857142857143
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwNzk=",
+        "title": "Albuquerque",
+        "displayName": "Albuquerque",
+        "country": "United States",
+        "cachedRegistrations": 271,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/albuquerque"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUyOQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -91.71428571428571,
+         34
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwODA=",
+        "title": "Atlanta",
+        "displayName": "Atlanta",
+        "country": "United States",
+        "cachedRegistrations": 87,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/atlanta"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUzMA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -96.28571428571429,
+         41.857142857142854
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwODE=",
+        "title": "Austin",
+        "displayName": "Austin",
+        "country": "United States",
+        "cachedRegistrations": 88,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/austin"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUzMQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -97,
+         42.857142857142854
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwODI=",
+        "title": "Baltimore",
+        "displayName": "Baltimore",
+        "country": "United States",
+        "cachedRegistrations": 144,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": false,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": true,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/baltimore"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUzMg==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -102.71428571428571,
+         35.285714285714285
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwODM=",
+        "title": "Boise",
+        "displayName": "Boise",
+        "country": "United States",
+        "cachedRegistrations": 131,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/boise"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUzMw==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -94.71428571428571,
+         35.57142857142857
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwODQ=",
+        "title": "Boston",
+        "displayName": "Boston",
+        "country": "United States",
+        "cachedRegistrations": 101,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/boston"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUzNA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -95,
+         35.714285714285715
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwODU=",
+        "title": "Buffalo",
+        "displayName": "Buffalo",
+        "country": "United States",
+        "cachedRegistrations": 77,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/buffalo"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUzNQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -94.71428571428571,
+         34.714285714285715
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwODY=",
+        "title": "Charlotte",
+        "displayName": "Charlotte",
+        "country": "United States",
+        "cachedRegistrations": 70,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/charlotte"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUzNg==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -103.42857142857143,
+         39.57142857142857
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwODc=",
+        "title": "Chicago",
+        "displayName": "Chicago",
+        "country": "United States",
+        "cachedRegistrations": 15,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/chicago"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUzNw==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -100.57142857142857,
+         33.142857142857146
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwODg=",
+        "title": "Cincinnati",
+        "displayName": "Cincinnati",
+        "country": "United States",
+        "cachedRegistrations": 181,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/cincinnati"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUzOA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -102.85714285714286,
+         36.57142857142857
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwODk=",
+        "title": "Cleveland",
+        "displayName": "Cleveland",
+        "country": "United States",
+        "cachedRegistrations": 42,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/cleveland"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjUzOQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -101.14285714285714,
+         35.857142857142854
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwOTA=",
+        "title": "Columbus",
+        "displayName": "Columbus",
+        "country": "United States",
+        "cachedRegistrations": 22,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/columbus"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU0MA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -96.57142857142857,
+         38.42857142857143
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwOTE=",
+        "title": "Dallas",
+        "displayName": "Dallas",
+        "country": "United States",
+        "cachedRegistrations": 9,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/dallas"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU0MQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -105.14285714285714,
+         38
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwOTI=",
+        "title": "Denver",
+        "displayName": "Denver",
+        "country": "United States",
+        "cachedRegistrations": 30,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/denver"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU0Mg==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -98.85714285714286,
+         35.57142857142857
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwOTM=",
+        "title": "Des Moines",
+        "displayName": "Des Moines",
+        "country": "United States",
+        "cachedRegistrations": 365,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/des-moines"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU0Mw==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -98.71428571428571,
+         35.42857142857143
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwOTQ=",
+        "title": "Detroit",
+        "displayName": "Detroit",
+        "country": "United States",
+        "cachedRegistrations": 162,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/detroit"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU0NA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -99.71428571428571,
+         36
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwOTU=",
+        "title": "El Paso",
+        "displayName": "El Paso",
+        "country": "United States",
+        "cachedRegistrations": 17,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/el-paso"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU0NQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -104.28571428571429,
+         37.714285714285715
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwOTY=",
+        "title": "Eugene",
+        "displayName": "Eugene",
+        "country": "United States",
+        "cachedRegistrations": 82,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/eugene"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU0Ng==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -97.42857142857143,
+         33.285714285714285
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwOTc=",
+        "title": "Fresno",
+        "displayName": "Fresno",
+        "country": "United States",
+        "cachedRegistrations": 75,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/fresno"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU0Nw==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -93.14285714285714,
+         35
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwOTg=",
+        "title": "Hartford",
+        "displayName": "Hartford",
+        "country": "United States",
+        "cachedRegistrations": 43,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/hartford"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU0OA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -97.28571428571429,
+         46.285714285714285
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUwOTk=",
+        "title": "Houston",
+        "displayName": "Houston",
+        "country": "United States",
+        "cachedRegistrations": 20,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/houston"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU0OQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -96.57142857142857,
+         37.285714285714285
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMDA=",
+        "title": "Indianapolis",
+        "displayName": "Indianapolis",
+        "country": "United States",
+        "cachedRegistrations": 485,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/indianapolis"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU1MA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -94.71428571428571,
+         40.57142857142857
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMDE=",
+        "title": "Kansas City",
+        "displayName": "Kansas City",
+        "country": "United States",
+        "cachedRegistrations": 40,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/kansas-city"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU1MQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -100.14285714285714,
+         43.857142857142854
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMDI=",
+        "title": "Las Vegas",
+        "displayName": "Las Vegas",
+        "country": "United States",
+        "cachedRegistrations": 32,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/las-vegas"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU1Mg==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -92.71428571428571,
+         33
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMDM=",
+        "title": "Louisville",
+        "displayName": "Louisville",
+        "country": "United States",
+        "cachedRegistrations": 379,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/louisville"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU1Mw==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -97,
+         39
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMDQ=",
+        "title": "Memphis",
+        "displayName": "Memphis",
+        "country": "United States",
+        "cachedRegistrations": 90,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/memphis"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU1NA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -100.28571428571429,
+         36.42857142857143
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMDU=",
+        "title": "Miami",
+        "displayName": "Miami",
+        "country": "United States",
+        "cachedRegistrations": 159,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/miami"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU1NQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -93.85714285714286,
+         46.42857142857143
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMDY=",
+        "title": "Milwaukee",
+        "displayName": "Milwaukee",
+        "country": "United States",
+        "cachedRegistrations": 114,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/milwaukee"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU1Ng==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -100.42857142857143,
+         37.714285714285715
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMDc=",
+        "title": "Minneapolis",
+        "displayName": "Minneapolis",
+        "country": "United States",
+        "cachedRegistrations": 14,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/minneapolis"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU1Nw==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -96.57142857142857,
+         41.285714285714285
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMDg=",
+        "title": "Nashville",
+        "displayName": "Nashville",
+        "country": "United States",
+        "cachedRegistrations": 194,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/nashville"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU1OA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -99,
+         41.142857142857146
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMDk=",
+        "title": "New Orleans",
+        "displayName": "New Orleans",
+        "country": "United States",
+        "cachedRegistrations": 10,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/new-orleans"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU1OQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -92.57142857142857,
+         38.857142857142854
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMTA=",
+        "title": "Oakland",
+        "displayName": "Oakland",
+        "country": "United States",
+        "cachedRegistrations": 50,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/oakland"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU2MA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -101,
+         37.142857142857146
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMTE=",
+        "title": "Omaha",
+        "displayName": "Omaha",
+        "country": "United States",
+        "cachedRegistrations": 56,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/omaha"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU2MQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -91.57142857142857,
+         38.42857142857143
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMTI=",
+        "title": "Orlando",
+        "displayName": "Orlando",
+        "country": "United States",
+        "cachedRegistrations": 13,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/orlando"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU2Mg==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -96.57142857142857,
+         38.857142857142854
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMTM=",
+        "title": "Philadelphia",
+        "displayName": "Philadelphia",
+        "country": "United States",
+        "cachedRegistrations": 303,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/philadelphia"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU2Mw==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -104.28571428571429,
+         36.857142857142854
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMTQ=",
+        "title": "Phoenix",
+        "displayName": "Phoenix",
+        "country": "United States",
+        "cachedRegistrations": 72,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/phoenix"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU2NA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -104,
+         42.142857142857146
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMTU=",
+        "title": "Pittsburgh",
+        "displayName": "Pittsburgh",
+        "country": "United States",
+        "cachedRegistrations": 239,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/pittsburgh"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU2NQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -103.57142857142857,
+         37
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMTY=",
+        "title": "Portland",
+        "displayName": "Portland",
+        "country": "United States",
+        "cachedRegistrations": 73,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/portland"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU2Ng==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -103.57142857142857,
+         45.142857142857146
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMTc=",
+        "title": "Providence",
+        "displayName": "Providence",
+        "country": "United States",
+        "cachedRegistrations": 232,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/providence"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU2Nw==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -93.85714285714286,
+         37.857142857142854
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMTg=",
+        "title": "Raleigh",
+        "displayName": "Raleigh",
+        "country": "United States",
+        "cachedRegistrations": 53,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/raleigh"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU2OA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -99.57142857142857,
+         32.714285714285715
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMTk=",
+        "title": "Richmond",
+        "displayName": "Richmond",
+        "country": "United States",
+        "cachedRegistrations": 70,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/richmond"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU2OQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -94.57142857142857,
+         44.42857142857143
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMjA=",
+        "title": "Rochester",
+        "displayName": "Rochester",
+        "country": "United States",
+        "cachedRegistrations": 59,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/rochester"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU3MA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -96.42857142857143,
+         36.57142857142857
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMjE=",
+        "title": "Sacramento",
+        "displayName": "Sacramento",
+        "country": "United States",
+        "cachedRegistrations": 595,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/sacramento"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU3MQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -94.85714285714286,
+         39
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMjI=",
+        "title": "Salt Lake City",
+        "displayName": "Salt Lake City",
+        "country": "United States",
+        "cachedRegistrations": 105,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/salt-lake-city"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU3Mg==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -104.71428571428571,
+         34.42857142857143
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMjM=",
+        "title": "San Antonio",
+        "displayName": "San Antonio",
+        "country": "United States",
+        "cachedRegistrations": 21,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/san-antonio"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU3Mw==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -99.14285714285714,
+         40.857142857142854
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMjQ=",
+        "title": "San Diego",
+        "displayName": "San Diego",
+        "country": "United States",
+        "cachedRegistrations": 12,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/san-diego"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU3NA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -96.71428571428571,
+         45.142857142857146
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMjU=",
+        "title": "San Francisco",
+        "displayName": "San Francisco",
+        "country": "United States",
+        "cachedRegistrations": 45,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/san-francisco"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU3NQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -100.42857142857143,
+         36.57142857142857
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMjY=",
+        "title": "San Jose",
+        "displayName": "San Jose",
+        "country": "United States",
+        "cachedRegistrations": 29,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/san-jose"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU3Ng==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -105,
+         41.142857142857146
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMjc=",
+        "title": "Seattle",
+        "displayName": "Seattle",
+        "country": "United States",
+        "cachedRegistrations": 60,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/seattle"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU3Nw==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -99.71428571428571,
+         34.42857142857143
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMjg=",
+        "title": "Spokane",
+        "displayName": "Spokane",
+        "country": "United States",
+        "cachedRegistrations": 157,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/spokane"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU3OA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -100.57142857142857,
+         43
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMjk=",
+        "title": "St. Louis",
+        "displayName": "St. Louis",
+        "country": "United States",
+        "cachedRegistrations": 15,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": false,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": true,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/st-louis"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU3OQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -100.57142857142857,
+         46.285714285714285
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMzA=",
+        "title": "Tacoma",
+        "displayName": "Tacoma",
+        "country": "United States",
+        "cachedRegistrations": 307,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/tacoma"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU4MA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -96,
+         39.857142857142854
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMzE=",
+        "title": "Tampa",
+        "displayName": "Tampa",
+        "country": "United States",
+        "cachedRegistrations": 199,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/tampa"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU4MQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -97.85714285714286,
+         41.57142857142857
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMzI=",
+        "title": "Tucson",
+        "displayName": "Tucson",
+        "country": "United States",
+        "cachedRegistrations": 8,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/tucson"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU4Mg==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -55.285714285714285,
+         -33.42857142857143
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMzM=",
+        "title": "Montevideo",
+        "displayName": "Montevideo",
+        "country": "Uruguay",
+        "cachedRegistrations": 437,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/montevideo"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU4Mw==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -58.285714285714285,
+         -31.428571428571427
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMzQ=",
+        "title": "Paysandú",
+        "displayName": "Paysandú",
+        "country": "Uruguay",
+        "cachedRegistrations": 13,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/paysandu"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU4NA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -57.142857142857146,
+         -30.571428571428573
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMzU=",
+        "title": "Punta del Este",
+        "displayName": "Punta del Este",
+        "country": "Uruguay",
+        "cachedRegistrations": 51,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/punta-del-este"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU4NQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -55.42857142857143,
+         -30.142857142857142
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMzY=",
+        "title": "Salto",
+        "displayName": "Salto",
+        "country": "Uruguay",
+        "cachedRegistrations": 147,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/salto"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU4Ng==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         66.85714285714286,
+         44.285714285714285
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMzc=",
+        "title": "Bukhara",
+        "displayName": "Bukhara",
+        "country": "Uzbekistan",
+        "cachedRegistrations": 289,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/bukhara"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU4Nw==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         67.42857142857143,
+         39.57142857142857
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMzg=",
+        "title": "Samarkand",
+        "displayName": "Samarkand",
+        "country": "Uzbekistan",
+        "cachedRegistrations": 195,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/samarkand"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU4OA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         69.2401,
+         41.2995
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxMzk=",
+        "title": "Tashkent",
+        "displayName": "Tashkent",
+        "country": "Uzbekistan",
+        "cachedRegistrations": 947,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/tashkent"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU4OQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -65.57142857142857,
+         8.285714285714286
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxNDA=",
+        "title": "Barquisimeto",
+        "displayName": "Barquisimeto",
+        "country": "Venezuela",
+        "cachedRegistrations": 49,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/barquisimeto"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU5MA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -67.42857142857143,
+         6.714285714285714
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxNDE=",
+        "title": "Caracas",
+        "displayName": "Caracas",
+        "country": "Venezuela",
+        "cachedRegistrations": 123,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/caracas"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU5MQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -67.57142857142857,
+         6.428571428571429
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxNDI=",
+        "title": "Maracaibo",
+        "displayName": "Maracaibo",
+        "country": "Venezuela",
+        "cachedRegistrations": 36,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/maracaibo"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU5Mg==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         -67.71428571428571,
+         6
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxNDM=",
+        "title": "Valencia",
+        "displayName": "Valencia",
+        "country": "Venezuela",
+        "cachedRegistrations": 88,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/valencia"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU5Mw==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         107.57142857142857,
+         16.285714285714285
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxNDQ=",
+        "title": "Da Nang",
+        "displayName": "Da Nang",
+        "country": "Vietnam",
+        "cachedRegistrations": 249,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/da-nang"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU5NA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         112.85714285714286,
+         9.142857142857142
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxNDU=",
+        "title": "Hanoi",
+        "displayName": "Hanoi",
+        "country": "Vietnam",
+        "cachedRegistrations": 46,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/hanoi"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU5NQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         109.57142857142857,
+         13
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxNDY=",
+        "title": "Ho Chi Minh City",
+        "displayName": "Ho Chi Minh City",
+        "country": "Vietnam",
+        "cachedRegistrations": 27,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/ho-chi-minh-city"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU5Ng==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         112.71428571428571,
+         12
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxNDc=",
+        "title": "Huế",
+        "displayName": "Huế",
+        "country": "Vietnam",
+        "cachedRegistrations": 41,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/hue"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU5Nw==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         49,
+         16.428571428571427
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxNDg=",
+        "title": "Sanaa",
+        "displayName": "Sanaa",
+        "country": "Yemen",
+        "cachedRegistrations": 0,
+        "eventType": "In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": false,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/sanaa"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU5OA==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         30.142857142857142,
+         -10
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxNDk=",
+        "title": "Lusaka",
+        "displayName": "Lusaka",
+        "country": "Zambia",
+        "cachedRegistrations": 28,
+        "eventType": "Virtual",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": false,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/lusaka"
+        }
+       }
+      }
+     },
+     {
+      "cursor": "b2Zmc2V0OjU5OQ==",
+      "node": {
+       "geometry": {
+        "coordinates": [
+         30.142857142857142,
+         -18.857142857142858
+        ]
+       },
+       "properties": {
+        "id": "aWQ6NTUxNTA=",
+        "title": "Harare",
+        "displayName": "Harare",
+        "country": "Zimbabwe",
+        "cachedRegistrations": 43,
+        "eventType": "Virtual & In-Person",
+        "registrationEnabled": true,
+        "isRegistrationOpen": true,
+        "isHostEvent": false,
+        "isHybrid": true,
+        "isVirtual": true,
+        "isWaitlist": false,
+        "meta": {
+         "htmlUrl": "https://www.spaceappschallenge.org/nasa-space-apps-2026/2026/locations/harare"
+        }
+       }
+      }
+     }
+    ],
+    "pageInfo": {
+     "endCursor": "b2Zmc2V0OjU5OQ==",
+     "hasNextPage": false
+    }
+   }
+  }
+ }
+]
