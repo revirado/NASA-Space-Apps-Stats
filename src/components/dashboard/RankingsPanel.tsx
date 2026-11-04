@@ -137,9 +137,12 @@ export function RankingsPanel({ events }: { events: LocalEvent[] }) {
         </p>
       </div>
 
+      {/* Cantidad de resultados tras los filtros (visible sin scrollear) */}
+      <ResultCount count={scope === 'global' ? countryRows.length : locationRows.length} dict={dict} lang={lang} />
+
       {/* Tabla: países (global) */}
       {scope === 'global' && (
-        <div className="scrollbar-thin mt-3 max-h-96 overflow-y-auto rounded-xl border border-[var(--pl-border)]">
+        <div className="scrollbar-thin mt-2 max-h-96 overflow-y-auto rounded-xl border border-[var(--pl-border)]">
           <table className="w-full border-collapse text-sm">
             <thead className="sticky top-0 z-10 bg-[var(--pl-surface-hover)]">
               <tr className="text-left text-[10px] uppercase tracking-wider text-[var(--pl-text-muted)]">
@@ -204,7 +207,7 @@ export function RankingsPanel({ events }: { events: LocalEvent[] }) {
 
       {/* Tabla: locaciones dentro de un país */}
       {scope !== 'global' && (
-        <div className="scrollbar-thin mt-3 max-h-96 overflow-y-auto rounded-xl border border-[var(--pl-border)]">
+        <div className="scrollbar-thin mt-2 max-h-96 overflow-y-auto rounded-xl border border-[var(--pl-border)]">
           <table className="w-full border-collapse text-sm">
             <thead className="sticky top-0 z-10 bg-[var(--pl-surface-hover)]">
               <tr className="text-left text-[10px] uppercase tracking-wider text-[var(--pl-text-muted)]">
@@ -248,6 +251,27 @@ export function RankingsPanel({ events }: { events: LocalEvent[] }) {
         </div>
       )}
     </section>
+  );
+}
+
+// Contador de resultados del ranking filtrado (singular/plural por idioma)
+function ResultCount({
+  count,
+  dict,
+  lang,
+}: {
+  count: number;
+  dict: ReturnType<typeof useLanguage>['dict'];
+  lang: ReturnType<typeof useLanguage>['lang'];
+}) {
+  return (
+    <p
+      className="mt-3 text-xs text-[var(--pl-text-muted)]"
+      aria-live="polite"
+    >
+      <span className="font-bold text-[var(--pl-accent-gold)]">{formatNumber(count, lang)}</span>{' '}
+      {count === 1 ? dict.rankings.resultSingular : dict.rankings.resultPlural}
+    </p>
   );
 }
 
