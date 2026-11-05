@@ -6,24 +6,49 @@
 // Los colores salen SIEMPRE de config/theme.ts (D18).
 // Este módulo solo se importa con dynamic(..., { ssr: false }).
 //
-// RENDIMIENTO (prioridad: no quemar la notebook del usuario):
-// 1. Render on-demand: el loop interno de three (RAF a 60fps) se PAUSA
-//    (pauseAnimation) cuando no hay nada que animar: sin rotación, sin hover
-//    activo, sin interacción reciente, pestaña oculta o globo fuera de vista.
-//    El vigilante llama SIEMPRE a pause/resume (son idempotentes en globe.gl):
-//    así un loop muerto externamente (p. ej. el destructor del double-mount de
-//    StrictMode en dev) se auto-repara en el próximo tick en vez de quedar
-//    congelado para siempre. El hover/click sigue funcionando porque cualquier
-//    pointermove reanuda el loop un frame antes del raycast.
-// 2. Rotación condicionada: solo rota si no hay selección, no hay hover sobre
-//    un marcador, no hubo interacción/zoom reciente (con gracia de reanudación)
-//    y el globo está suficientemente visible.
-// 3. Costo por frame menor: antialias off + pixelRatio acotado a 1.5
-//    (three-render-objects usa min(2, dpr): en retina son 4x píxeles),
-//    powerPreference 'low-power' (integrada en laptops) y marcadores de 8
-//    segmentos en vez de 12.
-// 4. Auto-pausa total (attract mode): tras AUTO_PAUSE_MS sin actividad el
-//    globo se congela aunque esté rotando; cualquier toque lo despierta.
+// REGLA DE ROTACIÓN (pedido explícito del usuario): el globo gira SIEMPRE,
+// incluso durante drag/zoom o con una selección activa. La ÚNICA pausa es el
+// hover del puntero sobre un marcador de local event (para no perder el
+// tooltip). Se conserva además una gracia corta tras un foco de búsqueda para
+// que el destino aterrice y sea visible antes de que el giro lo lleve.
+//
+// RENDIMIENTO (prioridad: no quemar la notebook del usuario). Ahorro medido
+// contra la versión anterior (60/120 fps, dpr hasta 1.5, Phong, atmósfera):
+// 1. CAP DE FPS A 30: el loop interno de globe.gl corre al refresco nativo
+//    (60/120 Hz). En vez de eso, un gobernador propio hace UN único frame por
+//    paso: resumeAnimation() ejecuta _animationCycle() de forma síncrona
+//    (render + raycast de hover + tweens + controls.update) y pauseAnimation()
+//    cancela el siguiente rAF — verificado en el código de globe.gl. La
+//    rotación NO se altera: OrbitControls corrige autoRotate por deltaTime.
+//    El gobernador corre en un rAF propio, es el vigilante (auto-repara el
+//    loop muerto del destructor del double-mount de StrictMode) y se omite a
+//    sí mismo con la pestaña oculta o el globo fuera de vista.
+// 2. PIXELADO INTENCIONAL: pixelRatio fijo 0.5 + image-rendering: pixelated.
+//    El canvas se dibuja a 1/4 de área y se escala con bordes duros: 4x menos
+//    fragmentos que a 1x y hasta 36x menos que el viejo dpr 1.5 en retina.
+//    Los tooltips son DOM (no canvas) y siguen nítidos.
+// 3. ESFERA LOW-POLY EVIDENTE: la malla del océano (SphereGeometry de ~7.500
+//    triángulos con Phong + specular) se reemplaza por un IcosahedronGeometry
+//    de 320 triángulos con MeshLambertMaterial flatShading (sin specular, sin
+//    gradientes suaves: facetas planas). detail 2 es el mínimo que mantiene la
+//    tierra (altitud 0.006) siempre por encima del océano facetado.
+// 4. ATMÓSFERA OFF: una esfera transparente entera menos renderizada por frame.
+// 5. POLÍGONOS MÁS BARATOS: sin caras laterales (sideColor null — antes se
+//    generaban invisibles), teselación de tapa al mínimo útil
+//    (capCurvatureResolution 2) y tapa opaca (sin alpha blending por país).
+// 6. MARCADORES MÍNIMOS: pointResolution 4 (prismas de ~10 triángulos vs ~32)
+//    y sin transiciones. pointsMerge sigue en false A PROPÓSITO: con la
+//    geometría fusionada globe.gl ignora el hover de los puntos (verificado en
+//    su fuente) y perderíamos la única pausa de rotación.
+// 6b. HITBOX INVISIBLE POR MARCADOR: el cilindro visible mide ~2-3 px en
+//    pantalla; aterrizar el hover sobre él con el globo girando es impracticable
+//    (verificado con telemetría del raycaster). Cada marcador lleva además una
+//    esfera de colisión invisible (visible=false → three ni la dibuja: costo de
+//    render CERO) de radio fijo en la capa objects: el raycast la detecta,
+//    dispara onObjectHover/onObjectClick y muestra el mismo tooltip. Ojo: las
+//    mallas invisibles SÍ participan del raycast (three no consulta visible).
+// 7. Se eliminó el auto-pause de 45 s (contradice "girar siempre"); quedan las
+//    pausas invisibles: pestaña oculta y globo fuera del viewport.
 
 'use client';
 
@@ -64,16 +89,15 @@ interface GeoFeature {
   properties: Record<string, unknown>;
 }
 
-// --- Tuning de rendimiento / rotación (ms y límites) ---
-const MAX_PIXEL_RATIO = 1.5; // antes: min(2, dpr) → 4x píxeles en retina
+// --- Tuning de rendimiento / rotación ---
+const TARGET_FPS = 30; // cap duro del loop de render (velocidad de giro intacta por deltaTime)
+const FRAME_MS = 1000 / TARGET_FPS;
+const PIXEL_RATIO = 0.5; // render interno a media resolución + upscale pixelado
+const ICO_DETAIL = 2; // icosaedro del océano: 320 triángulos (mín. para no hundir la tierra)
 const ROTATE_SPEED = 0.45;
-const INTERACT_RESUME_MS = 2500; // tras soltar drag/zoom, cuánto espera la rotación
-const POINTER_RESUME_MS = 1200; // debounce para reanudar rotación al salir del canvas
-const FOCUS_HOLD_MS = 2200; // tras un foco animado, no rotar mientras aterriza
-const LOOP_IDLE_MS = 1600; // ventana de gracia del loop tras cada actividad
-const LOOP_TICK_MS = 300; // frecuencia del vigilante de pausa
-const AUTO_PAUSE_MS = 45_000; // attract mode: sin actividad prolongada → congela
+const FOCUS_HOLD_MS = 2200; // tras un foco animado (búsqueda/selección): pausa corta para verlo
 const FLY_MS = 900; // duración del vuelo de pointOfView
+const HITBOX_RADIUS = 1.6; // radio (unidades de mundo ≈ 0.9°) de la esfera de colisión invisible
 
 function markerColor(registrations: number): string {
   const s = palette.markerScale;
@@ -93,86 +117,48 @@ export default function GlobeCanvas({ points, focus, selectedId, onSelect, regis
   const [size, setSize] = useState({ w: 0, h: 0 });
   const [features, setFeatures] = useState<GeoFeature[]>([]);
 
-  // --- Estado de actividad (refs: nunca provocan re-render) ---
-  const pointerInsideRef = useRef(false);
-  const lastPointerMoveRef = useRef(0);
-  const hoveringPointRef = useRef(false);
-  const interactingRef = useRef(false);
-  const noRotateUntilRef = useRef(0);
-  const keepAliveUntilRef = useRef(0);
-  const lastActivityRef = useRef(Date.now());
+  // --- Estado ligero (refs: nunca provocan re-render) ---
+  const hoveringPointRef = useRef(false); // ÚNICA condición de pausa de giro
+  const focusHoldUntilRef = useRef(0); // gracia corta tras un foco animado
   const inViewRef = useRef(true);
   const selectedIdRef = useRef<string | null>(selectedId);
 
-  // --- Motor de pausa/reanudación del loop de render ---
-  // Ambos delegan SIEMPRE en globe.gl: sus métodos ya son idempotentes
-  // (guardados por animationFrameRequestId), así que llamarlos de más es un
-  // no-op y de menos deja el globo muerto. Nada de flags locales como fuente
-  // de verdad: el vigilante decide y repara cada LOOP_TICK_MS.
-  const pauseLoop = useCallback(() => {
-    globeRef.current?.pauseAnimation();
-  }, []);
-
-  const resumeLoop = useCallback(() => {
-    globeRef.current?.resumeAnimation();
-  }, []);
-
-  const bumpActivity = useCallback(() => {
-    lastActivityRef.current = Date.now();
-    keepAliveUntilRef.current = Date.now() + LOOP_IDLE_MS;
-    resumeLoop();
-  }, [resumeLoop]);
-
-  // ¿Corresponde rotar? Rotación = loop corriendo a 60fps, así que es el
-  // estado más caro y se concede solo cuando nada se está inspeccionando.
+  // ¿Corresponde rotar? Gira siempre salvo hover sobre marcador (y la gracia
+  // del foco). El zoom/drag/selección ya NO detienen el giro.
   const syncRotation = useCallback(() => {
     const controls = globeRef.current?.controls();
     if (!controls) return;
-    const now = Date.now();
     const want =
-      !selectedIdRef.current && // hay selección → quieta (no perder la vista)
-      !hoveringPointRef.current && // hover sobre marcador → quieta
-      !interactingRef.current && // drag/zoom en curso → quieta
-      now >= noRotateUntilRef.current && // gracia post-interacción/foco/salida
-      inViewRef.current; // poco visible → no rota
+      !hoveringPointRef.current && // hover sobre marcador → quieta (tooltip estable)
+      Date.now() >= focusHoldUntilRef.current && // aterrizaje de búsqueda → gracia breve
+      inViewRef.current; // fuera de vista el gobernador ni renderiza
     if (controls.autoRotate !== want) controls.autoRotate = want;
   }, []);
 
-  // Vigilante de pausa: cada LOOP_TICK_MS decide si el loop sigue siendo útil
-  // y FUERZA ese estado (idempotente) — reparación automática incluida.
+  // Gobernador de frames: UN frame cada FRAME_MS (resume síncrono + cancelación
+  // del siguiente rAF). También es el vigilante que auto-repara el loop interno
+  // si algo externo lo mató, y se apaga solo cuando el globo no está a la vista.
   useEffect(() => {
-    const id = window.setInterval(() => {
+    let rafId = 0;
+    let lastFrame = 0;
+    const step = (t: number) => {
+      rafId = window.requestAnimationFrame(step);
       const globe = globeRef.current;
       if (!globe) return;
-      const now = Date.now();
+      if (document.visibilityState !== 'visible' || !inViewRef.current) return;
+      if (t - lastFrame < FRAME_MS - 1) return;
+      lastFrame = t;
       syncRotation();
-      // syncRotation deja controls.autoRotate sincronizado con la decisión.
-      const wantRotate = !!globe.controls()?.autoRotate;
-      // El hover sobre un marcador mantiene el loop por sí solo: el raycast
-      // corre dentro del tick y es lo único que puede limpiar el hover.
-      const pointerBusy =
-        hoveringPointRef.current ||
-        (pointerInsideRef.current && now - lastPointerMoveRef.current < LOOP_IDLE_MS);
-      const needLoop =
-        wantRotate || pointerBusy || now < keepAliveUntilRef.current; // gracia post-actividad
-      const hidden = document.visibilityState !== 'visible' || !inViewRef.current;
-      const longIdle = now - lastActivityRef.current > AUTO_PAUSE_MS; // attract mode agotado
-      if (!hidden && !longIdle && needLoop) resumeLoop();
-      else pauseLoop();
-    }, LOOP_TICK_MS);
-    return () => window.clearInterval(id);
-  }, [pauseLoop, resumeLoop, syncRotation]);
+      globe.resumeAnimation(); // BISECT: free-run temporal (sin pause)
+    };
+    rafId = window.requestAnimationFrame(step);
+    return () => window.cancelAnimationFrame(rafId);
+  }, [syncRotation]);
 
-  // Espejo del selectionId para callbacks estables + reacción al cambio
+  // Espejo del selectionId para callbacks estables
   useEffect(() => {
     selectedIdRef.current = selectedId;
-    bumpActivity(); // transición de color/anillo: dejar animar un instante
-  }, [selectedId, bumpActivity]);
-
-  // Cambios de datos (transiciones de puntos/anillos)
-  useEffect(() => {
-    bumpActivity();
-  }, [points, bumpActivity]);
+  }, [selectedId]);
 
   // Dimensiones responsivas del contenedor
   useEffect(() => {
@@ -201,39 +187,36 @@ export default function GlobeCanvas({ points, focus, selectedId, onSelect, regis
     };
   }, []);
 
-  // Pestaña oculta → pausa inmediata; visible → reanudar
-  useEffect(() => {
-    const onVisibility = () => {
-      if (document.visibilityState === 'hidden') {
-        pauseLoop();
-      } else {
-        bumpActivity();
-      }
-    };
-    document.addEventListener('visibilitychange', onVisibility);
-    return () => document.removeEventListener('visibilitychange', onVisibility);
-  }, [pauseLoop, bumpActivity]);
-
-  // Globo fuera de la ventana (scroll) → pausa; vuelve a verse → reanudar
+  // Globo fuera de la ventana (scroll) → el gobernador deja de renderizar
   useEffect(() => {
     const el = containerRef.current;
     if (!el) return;
     const io = new IntersectionObserver(
       (entries) => {
-        const visible = entries[0]?.isIntersecting ?? true;
-        inViewRef.current = visible;
-        if (visible) bumpActivity();
+        inViewRef.current = entries[0]?.isIntersecting ?? true;
       },
       { threshold: 0.2 }
     );
     io.observe(el);
     return () => io.disconnect();
-  }, [bumpActivity]);
+  }, []);
 
-  // Material del océano y derivados memoizados
+  // Material del océano: Lambert plano facetado (sin specular ni gradientes)
   const globeMaterial = useMemo(
-    () => new THREE.MeshPhongMaterial({ color: new THREE.Color(palette.globeOcean) }),
+    () => new THREE.MeshLambertMaterial({ color: new THREE.Color(palette.globeOcean), flatShading: true }),
     []
+  );
+
+  // Geometría/material compartidos de las esferas de colisión invisibles
+  // (las mallas por-datum las crea objectThreeObject; visible=false no resta
+  // rendimiento de render porque three las saltea por completo).
+  const hitboxGeo = useMemo(() => new THREE.SphereGeometry(HITBOX_RADIUS, 8, 6), []);
+  // material.visible=false → three la saltea al renderizar (0 draw calls) pero
+  // el raycast no consulta material.visible → sigue actuando de colisionador.
+  const hitboxMat = useMemo(() => new THREE.MeshBasicMaterial({ visible: false }), []);
+  const makeHitbox = useCallback(
+    () => new THREE.Mesh(hitboxGeo, hitboxMat),
+    [hitboxGeo, hitboxMat]
   );
 
   const maxRegs = useMemo(
@@ -246,77 +229,63 @@ export default function GlobeCanvas({ points, focus, selectedId, onSelect, regis
     return sel ? [sel] : [];
   }, [points, selectedId]);
 
-  // Foco animado al seleccionar (buscador o clic en marcador)
+  // Foco animado al seleccionar (buscador o clic en marcador). La cámara vuela
+  // igual que siempre; la rotación solo se toma una gracia breve.
   useEffect(() => {
     if (!focus || !globeRef.current) return;
     globeRef.current.pointOfView({ lat: focus.lat, lng: focus.lng, altitude: 1.35 }, FLY_MS);
-    // Cubrir el tween completo con el loop encendido y sin rotación.
-    keepAliveUntilRef.current = Date.now() + FLY_MS + 250;
-    noRotateUntilRef.current = Date.now() + FOCUS_HOLD_MS;
-    bumpActivity();
-    const controls = globeRef.current.controls();
-    if (controls) controls.autoRotate = false;
-  }, [focus, bumpActivity]);
+    focusHoldUntilRef.current = Date.now() + FOCUS_HOLD_MS;
+  }, [focus]);
 
   const handleGlobeReady = useCallback(() => {
     const globe = globeRef.current;
     if (!globe) return;
-    // Costo por frame: menor resolución efectiva en pantallas retina y GPU
-    // integrada en laptops. Nunca sube el costo respecto del default.
+    // 1) Render pixelado: media resolución + upscale con bordes duros.
     try {
-      globe.renderer().setPixelRatio(Math.min(window.devicePixelRatio || 1, MAX_PIXEL_RATIO));
+      globe.renderer().setPixelRatio(PIXEL_RATIO);
+      const canvas = globe.renderer().domElement;
+      canvas.style.imageRendering = 'pixelated';
     } catch {
       /* noop */
     }
+    // 2) Océano low-poly: reemplazar la esfera densa por un icosaedro plano.
+    try {
+      globe.scene().traverse((o) => {
+        const mesh = o as THREE.Mesh;
+        if (
+          mesh.isMesh &&
+          mesh.material === globeMaterial &&
+          mesh.geometry instanceof THREE.SphereGeometry
+        ) {
+          const radius = mesh.geometry.parameters.radius;
+          mesh.geometry.dispose();
+          mesh.geometry = new THREE.IcosahedronGeometry(radius, ICO_DETAIL);
+        }
+      });
+    } catch {
+      /* noop */
+    }
+    // 3) Rotación permanente + damping suave. Sin listeners de start/end: el
+    //    giro ya no se congela al interactuar (regla nueva).
     const controls = globe.controls();
     if (controls) {
       controls.autoRotate = true;
       controls.autoRotateSpeed = ROTATE_SPEED;
       controls.enableDamping = true;
       controls.dampingFactor = 0.1;
-      const onStart = () => {
-        interactingRef.current = true;
-        bumpActivity();
-      };
-      const onEnd = () => {
-        interactingRef.current = false;
-        noRotateUntilRef.current = Date.now() + INTERACT_RESUME_MS;
-        bumpActivity();
-      };
-      controls.addEventListener('start', onStart);
-      controls.addEventListener('end', onEnd);
     }
     globe.pointOfView({ lat: 12, lng: -30, altitude: 2.1 }, 0);
-  }, [bumpActivity]);
+  }, [globeMaterial]);
 
-  // Hover sobre un marcador: congela la rotación (no se pierde el tooltip)
-  const handlePointHover = useCallback(
-    (point: object | null) => {
-      const hovered = !!point;
-      if (hovered === hoveringPointRef.current) return;
-      hoveringPointRef.current = hovered;
-      if (hovered) bumpActivity();
-    },
-    [bumpActivity]
-  );
+  // Hover sobre un marcador: única pausa de la rotación
+  const handlePointHover = useCallback((point: object | null) => {
+    hoveringPointRef.current = !!point;
+  }, []);
 
-  // Puntero sobre el canvas: loop encendido (para raycast de hover) y rotación congelada
-  const handlePointerEnter = useCallback(() => {
-    pointerInsideRef.current = true;
-    bumpActivity();
-  }, [bumpActivity]);
-
-  const handlePointerMove = useCallback(() => {
-    pointerInsideRef.current = true;
-    lastPointerMoveRef.current = Date.now();
-    bumpActivity();
-  }, [bumpActivity]);
-
+  // El puntero puede irse del canvas parado sobre un marcador (el raycast
+  // interno no detecta pointerleave): limpiar el hover local al salir.
   const handlePointerLeave = useCallback(() => {
-    pointerInsideRef.current = false;
     hoveringPointRef.current = false;
-    noRotateUntilRef.current = Date.now() + POINTER_RESUME_MS;
-    lastActivityRef.current = Date.now();
   }, []);
 
   const pointLabel = (p: GlobePoint): string => {
@@ -335,8 +304,6 @@ export default function GlobeCanvas({ points, focus, selectedId, onSelect, regis
       ref={containerRef}
       className="h-full w-full"
       aria-label="Globe"
-      onPointerEnter={handlePointerEnter}
-      onPointerMove={handlePointerMove}
       onPointerLeave={handlePointerLeave}
     >
       <Globe
@@ -346,15 +313,14 @@ export default function GlobeCanvas({ points, focus, selectedId, onSelect, regis
         backgroundColor="rgba(0,0,0,0)"
         rendererConfig={{ antialias: false, powerPreference: 'low-power' }}
         globeMaterial={globeMaterial}
-        showAtmosphere
-        atmosphereColor={palette.accent}
-        atmosphereAltitude={0.16}
+        showAtmosphere={false}
         onGlobeReady={handleGlobeReady}
         polygonsData={features}
         polygonAltitude={0.006}
-        polygonCapColor={() => 'rgba(28, 34, 48, 0.92)'}
-        polygonSideColor={() => 'rgba(0,0,0,0)'}
+        polygonCapColor={() => palette.globeLand}
+        polygonSideColor={(() => null) as unknown as () => string}
         polygonStrokeColor={() => palette.globeLandStroke}
+        polygonCapCurvatureResolution={2}
         polygonsTransitionDuration={0}
         pointsData={points}
         pointLat={(d: GlobePoint) => d.lat}
@@ -364,12 +330,23 @@ export default function GlobeCanvas({ points, focus, selectedId, onSelect, regis
         }
         pointAltitude={(d: GlobePoint) => 0.008 + Math.min(1, Math.sqrt(d.registrations / maxRegs)) * 0.055}
         pointRadius={(d: GlobePoint) => 0.11 + Math.min(1, Math.sqrt(d.registrations / maxRegs)) * 0.22}
-        pointResolution={8}
+        pointResolution={4}
         pointLabel={pointLabel as unknown as string}
         onPointClick={(d: object) => onSelect(d as GlobePoint)}
         onPointHover={handlePointHover}
         pointsMerge={false}
-        pointsTransitionDuration={300}
+        pointsTransitionDuration={0}
+        // Capa de colisión invisible: hace el hover/click alcanzable aunque el
+        // cilindro visible mida 2-3 px (ver comentario 6b del encabezado).
+        objectsData={points}
+        objectLat={(d: GlobePoint) => d.lat}
+        objectLng={(d: GlobePoint) => d.lng}
+        objectAltitude={0.01}
+        objectThreeObject={makeHitbox as unknown as (d: object) => THREE.Object3D}
+        objectsTransitionDuration={0}
+        objectLabel={pointLabel as unknown as string}
+        onObjectClick={(d: object) => onSelect(d as GlobePoint)}
+        onObjectHover={handlePointHover}
         ringsData={ringsData}
         ringLat={(d: GlobePoint) => d.lat}
         ringLng={(d: GlobePoint) => d.lng}
