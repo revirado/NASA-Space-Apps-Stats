@@ -18,13 +18,13 @@
 
 ## 1. Qué es
 
-Un solo proyecto Next.js 16 (App Router) con dos vistas previstas: el **dashboard
-público** (solo lectura) y la **terminal de carga** (privada, Fase 2). Hoy está
-implementada la **Fase 1** completa: dashboard sobre JSON crudos de la plataforma
-+ terminología, paleta y estados de fallo listos para las fases siguientes.
+Un solo proyecto Next.js 16 (App Router) con dos vistas: el **dashboard
+público** (solo lectura) y la **terminal de carga** (privada, Fase 2).
+Fases 1 y 2 completas: dashboard sobre JSON crudos o DB, y terminal de carga
+con parseo en navegador, validación y escritura transaccional.
 
 - Datos: los JSON crudos de la plataforma (`fixtures/`) son la fuente de verdad; la DB es descartable y reconstruible (sección 9 del brief).
-- El sandbox solo permite la ruta `/`; el dashboard vive ahí (en producción serán `/dashboard` y `/terminal` según `APP_MODE`).
+- Rutas (sección 15): `/` redirige a `/dashboard`; `/terminal` 404 si el modo no la habilita. En dev sin variables: `APP_MODE=all` + `DATA_SOURCE=fixtures`.
 - Stack: Next.js 16 + TypeScript 5 + Tailwind 4 + shadcn/ui + react-globe.gl (three.js) + Recharts + Prisma (SQLite aquí, Neon en producción).
 
 ## 2. Estado por fases
@@ -32,7 +32,7 @@ implementada la **Fase 1** completa: dashboard sobre JSON crudos de la plataform
 | Fase | Estado |
 | --- | --- |
 | 1 · Prueba de concepto sin DB (globo, buscador, rankings, tarjetas, estados, i18n, paleta) | **Completa y verificada** (63/63 + navegador) |
-| 2 · Terminal de carga + DB (Neon en prod) | Preparada: esquema Prisma y `dbReader.ts` listos; falta `SnapshotWriter`, UI `/terminal`, APIs |
+| 2 · Terminal de carga + DB (Neon en prod) | **Completa en sandbox/SQLite y verificada en navegador** (carga→guardar→leer, idempotencia, 404 por modo). Neon/Vercel queda para la Fase 3 |
 | 3 · Despliegue en la nube (Vercel, dos proyectos, switcher ENG default) | Pendiente |
 | 4 · Evolución con 2+ capturas, manifiesto masivo, exportación | `domain/evolution.ts` listo; UI básica de evolución lista; falta carga real |
 | Después · API oficial como fuente más | Pendiente |
@@ -67,6 +67,8 @@ Leyenda: **S** = solo servidor · **C** = componente cliente · **P** = puro (si
 | `dataState.ts` | Los 5 estados de fallo (sección 13) + `DashboardPayload` | `DataState` (`ok/unconfigured/unavailable/uninitialized/empty`) |
 | `fixturesReader.ts` **S** | Fase 1: lee `fixtures/manifest.json` + JSON, parsea con domain, arma payload; archivos ausentes → `empty` | `getDashboardPayload()` |
 | `dbReader.ts` **S** | Fase 2: lee snapshots de Prisma y mapea errores (P2021→uninitialized, P1001→connection) | `getPayloadFromDb()` |
+| `dbWriter.ts` **S** | SnapshotWriter (sección 16): transacción única, idempotencia por sha256 (paso 9: unchanged / needs_confirmation / saved), upsert de `schema_version`, listado y borrado | `saveSnapshot()`, `removeSnapshot()`, `listSnapshots()`, `FileRecord` |
+| `dbErrors.ts` **S** | Mapeo compartido de errores Prisma → estados de la sección 13, sin credenciales en la UI | `mapDbError()` |
 
 ### i18n (`src/i18n/`) — bilingüe (D19)
 
@@ -80,7 +82,11 @@ Leyenda: **S** = solo servidor · **C** = componente cliente · **P** = puro (si
 | Archivo | Rol |
 | --- | --- |
 | `src/app/layout.tsx` | Fuentes, metadata, `<style>` con la paleta de `theme.ts` (D18) |
-| `src/app/page.tsx` **S** | Ruta `/` (única del sandbox): `getDashboardPayload()` → `<DashboardApp/>`; `force-dynamic` |
+| `src/app/page.tsx` **S** | `/` → redirect a `/dashboard` (sección 15, regla confirmada por el autor); `force-dynamic` |
+| `src/app/dashboard/page.tsx` **S** | Vista pública: `getDashboardPayload()` → `<DashboardApp/>`; `force-dynamic` |
+| `src/app/terminal/page.tsx` **S** | Vista privada: 404 por modo (`notFound()` si `!canUseTerminal()`); renderiza `<TerminalApp/>` |
+| `src/app/api/terminal/snapshots/route.ts` **S** | GET lista de capturas (guard: 404 por modo, 401/503 por token) |
+| `src/app/api/terminal/snapshot/route.ts` **S** | POST guarda captura validada (payload validado defensivamente); DELETE borra por `?capturedAt=` |
 | `src/app/globals.css` | Tokens shadcn base + `.scrollbar-thin` + estilos del tooltip de globe.gl |
 | `src/components/dashboard/DashboardApp.tsx` **C** | Vista raíz: decide qué mostrar según `DataState`; estado compartido selección/foco entre buscador y globo |
 | `src/components/dashboard/Header.tsx` **C** | Identidad + fecha de captura (D16: `latestCapturedAt`, nunca `ingestedAt`) + switcher |
@@ -94,7 +100,17 @@ Leyenda: **S** = solo servidor · **C** = componente cliente · **P** = puro (si
 | `src/components/dashboard/FailState.tsx` **C** | Aviso por estado, nombra la variable que falta, sin credenciales; botón Reintentar |
 | `src/components/dashboard/Footer.tsx` **C** | Pie sticky (`mt-auto`) con crédito ariellamas.tech (D20) y safe-area iOS |
 | `src/components/dashboard/TypeBadge.tsx` **C** | Badge de tipo de locación con color de paleta |
+| `src/components/terminal/TerminalApp.tsx` **C** | Raíz de la terminal: máquina de estados (parseo→validación→guardado), reemplazo confirmado por AlertDialog, token en sessionStorage (`pl-terminal-token`), TZ del navegador vía `useSyncExternalStore` (anti-hidratación) |
+| `src/components/terminal/UploadZone.tsx` **C** | Drag & drop + selector múltiple; parsea en el navegador, nada viaja hasta «Guardar» |
+| `src/components/terminal/ParseLog.tsx` **C** | Log de sesión monoespaciado con niveles de color de paleta; auto-scroll |
+| `src/components/terminal/CaptureMeta.tsx` **C** | Fecha/hora de captura obligatoria (D15, nunca del reloj) + TZ (default navegador) + nota; muestra el instante UTC resultante |
+| `src/components/terminal/ValidationSummary.tsx` **C** | Resumen previo (paso 8): tabla de archivos con sha/offsets, veredicto del parser, advertencias no bloqueantes |
+| `src/components/terminal/SnapshotList.tsx` **C** | Capturas en la base con borrado confirmado (AlertDialog) |
+| `src/components/terminal/types.ts` **C** | Tipos de la terminal + colores de log por paleta |
 | `src/lib/format.ts` | `formatNumber/Decimal/CapturedAt` con Intl (en-US / es-AR), fechas en UTC (D15/D16) |
+| `src/lib/timezone.ts` | `zonedWallTimeToUtcIso()` (dos pasadas DST), `browserTimezone()`, `listTimezones()` + snapshot estable para `useSyncExternalStore` (D15) |
+| `src/lib/hash.ts` | `sha256Hex()` con WebCrypto en el navegador (paso 5 del algoritmo) |
+| `src/lib/terminalGuard.ts` **S** | Guard de APIs de escritura (sección 15, defensa en profundidad): 404 por modo, token con `timingSafeEqual`, 503 «sin configuración» en prod sin token, dev sin token permitido con warning | `guardTerminal()` |
 | `src/lib/db.ts` **S** | Cliente Prisma singleton (andamio del sandbox) |
 
 ### Fixtures y scripts
@@ -182,3 +198,5 @@ En dev, si faltan: `APP_MODE=all`, `DATA_SOURCE=fixtures`.
 | 2026-11-04 | **Rendimiento del globo + UX de rotación + conteo de rankings**: (a) GlobeCanvas reescrito con render on-demand — el loop RAF se pausa (`pauseAnimation`) cuando no hay nada que animar y el vigilante de 300ms fuerza el estado deseado con métodos idempotentes (repara el loop muerto que dejaba el `_destructor` del double-mount de StrictMode en dev, que congelaba el globo para siempre); (b) rotación solo cuando no hay hover sobre marcador, ni zoom/drag (gracias a eventos `start`/`end` de OrbitControls + gracia de 2.5s), ni selección activa, ni foco reciente; hover mantiene el tooltip vivo porque el loop sigue corriendo mientras (`hoveringPoint` sostiene el loop); (c) costo por frame: antialias off, pixelRatio ≤ 1.5, `powerPreference low-power`, `pointResolution 8`; (d) pausa inmediata con pestaña oculta o globo <20% visible y auto-pausa total a los 45s sin actividad (attract mode); (e) RankingsPanel: contador de resultados filtrados (claves i18n `resultSingular/resultPlural`). Verificado en navegador: rota al cargar → se congela sobre marcador (tooltip "Salta/112") → tarjeta seleccionada lo mantiene enmarcado → al cerrar reanuda → RAF=0 tras 45s idle y con pestaña oculta → zoom con rueda OK → conteo 115/79/58 según filtro y 16 en Argentina → móvil OK → consola limpia. Hallazgo técnico: el raycast/hover de globe.gl corre DENTRO del tick RAF — pausar el loop sin mantenerlo vivo durante hover rompe tooltips (por eso `pointerBusy` incluye `hoveringPoint`) | `src/components/dashboard/GlobeCanvas.tsx`, `src/components/dashboard/RankingsPanel.tsx`, `src/i18n/dictionaries.ts` |
 | 2026-11-05 | **Giro permanente + segunda tanda de optimización del globo (pedido explícito)**: (a) regla nueva: el globo gira SIEMPRE — única pausa = hover sobre un local event (+ gracia de 2.2 s tras un foco de búsqueda para ver el destino aterrizar); eliminados los bloqueos por drag/zoom/selección y el auto-pause de 45 s; (b) gobernador de FPS: el loop interno corría al refresco nativo (60/120 Hz); ahora un rAF propio ejecuta EXACTAMENTE 1 tick cada 33 ms (`resumeAnimation()` corre `_animationCycle` síncrono y `pauseAnimation()` cancela el siguiente rAF — verificado en la fuente de globe.gl); la velocidad de giro no cambia porque OrbitControls corrige autoRotate por deltaTime; (c) pixelRatio 0.5 + `image-rendering: pixelated` (¼ de fragmentos; los tooltips son DOM y quedan nítidos); (d) océano = IcosahedronGeometry(detail 2, 320 tris) con MeshLambertMaterial flatShading (antes SphereGeometry ~7.5k tris con Phong+specular); detail 2 = mínimo que mantiene la tierra (alt 0.006) sobre el océano facetado; (e) atmósfera OFF; polígonos sin caras laterales (`polygonSideColor null`), `capCurvatureResolution 2` y tapa opaca; marcadores `pointResolution 4` sin transiciones; (f) **hitboxes invisibles** (esferas r=1.6, `material.visible=false`, capa objects): el cilindro visible mide 2-3 px y el hover era inalcanzable con el globo girando (diagnosticado con instrumentación temporal del raycaster de three-render-objects — hallazgo: three SÍ raycastea mallas con material invisible; instrumentación revertida a pristine). Verificado en navegador: rotación continua (frames difieren), sigue girando durante zoom sintético, hover → autoRotate=false + tooltip "Cairo Egypt 3,474 registrants", reanuda a 8 px del marcador, click → tarjeta Salta, búsqueda → vuelo + gracia + reanudación, contador 115 results, móvil OK (footer sticky), consola limpia, lint limpio, 63/63 | `src/components/dashboard/GlobeCanvas.tsx` |
 | 2026-11-21 | **Restauración del workspace + build/start Vercel-ready**: el sandbox se restableció a la plantilla vacía y se perdió todo el código; restaurado íntegramente desde el tar que subió el autor (`.git` incluido con la historia real; fixtures, geojson, PROJECT_INDEX, componentes — verificado con `fixtures:verify` 63/63, lint limpio y navegador: dashboard completo con valores de sección 8 exactos, búsqueda `sanliurfa`→Şanlıurfa, switcher ESPA, globo rotando, consola limpia). Config corregida (pedido explícito del autor, pensado para Vercel): `next.config.ts` **sin** `output:"standalone"`, `"build": "next build"`, `"start": "next start"` (sin bun). Recreado `.env.example` (no vino en el tar). **Advertencia de plataforma**: el `build.sh` interno del sandbox auto-inyecta `output:"standalone"` en next.config.ts si falta, al publicar desde el sandbox (modelo FC propio) — si eso pasa, re-quitar la línea | `package.json`, `next.config.ts`, `.env.example`, `.gitignore`, PROJECT_INDEX.md |
+| 2026-11-21 | **Repo: `.env` fuera del tracking** (reportado por el autor: git detectaba cambios aunque `.env*` está en `.gitignore`). Causa: `.env` quedó trackeado desde el Initial commit de la plantilla (`720d0cb`) y gitignore solo aplica a archivos no trackeados. Fix en sandbox: `git rm --cached .env` + commit (`df9a9e1`); el autor corre lo mismo en su local | `.env` (untracked), PROJECT_INDEX.md |
+| 2026-11-21 | **Fase 2 completa: terminal de carga** (rutas `/`→redirect, `/dashboard`, `/terminal` + APIs). UI estilo terminal (mono, paleta D18, textos D19 en `terminal.*`): drag&drop + parseo COMPLETO en navegador con domain isomórfico (clasificación D1–D2, sha256 WebCrypto paso 5, validación D3–D4, resumen previo paso 8, advertencias no bloqueantes), fecha de captura obligatoria + zona horaria con conversión de pared→UTC en dos pasadas DST (D15, `lib/timezone.ts`), guardado vía API con reemplazo confirmado (AlertDialog) y token en sessionStorage. Backend: `dbWriter.ts` = SnapshotWriter con transacción única + idempotencia por sha256 (unchanged/needs_confirmation/saved) + upsert `schema_version`; APIs con `terminalGuard` (404 por modo — verificado: con `APP_MODE=dashboard` GET /terminal, POST y GET responden 404 y /dashboard 200; token con timingSafeEqual; 503 «sin configuración» en prod sin token; dev sin token permitido con warning). Esquema: `SnapshotFile.offsetStart/offsetEnd` ahora `Int?` (fallback D3 cuando el cursor no decodifica). `dbReader` refactorizado para compartir `dbErrors.ts`. **Verificado en navegador**: a.json+b.json → reconocidos por contenido (no por nombre), captura guardada con UTC preview, lista con 1 fila; re-guardado idéntico → «unchanged»; `DATA_SOURCE=db` → dashboard lee de la DB con valores de sección 8 idénticos y capturedAt del autor (D16). Lint limpio, 63/63. Nota: los mensajes de diagnóstico del domain (advertencias/rechazos) se muestran en su idioma original (español) — son datos del parser, no strings de UI | `src/app/page.tsx`, `src/app/dashboard/page.tsx`, `src/app/terminal/page.tsx`, `src/app/api/terminal/**`, `src/components/terminal/**` (7 archivos), `src/data/dbWriter.ts`, `src/data/dbErrors.ts`, `src/data/dbReader.ts`, `src/lib/{timezone,hash,terminalGuard}.ts`, `src/i18n/dictionaries.ts`, `prisma/schema.prisma`, PROJECT_INDEX.md |

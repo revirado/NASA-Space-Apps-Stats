@@ -11,27 +11,7 @@ import type { AppMode, DataSource } from '@/config/appMode';
 import { computeStats } from '@/domain/stats';
 import type { Snapshot } from '@/domain/types';
 import type { DashboardPayload, DataState } from './dataState';
-
-interface PrismaErrorLike {
-  code?: string;
-  message?: string;
-}
-
-function mapDbError(err: unknown): DataState {
-  const e = err as PrismaErrorLike;
-  console.error('[dbReader]', e?.code ?? '', e?.message ?? err);
-  const code = e?.code ?? '';
-  if (code === 'P2021' || code === 'P2022') {
-    return { status: 'uninitialized', detail: 'Las tablas no existen o no coinciden.' };
-  }
-  if (code === 'P1001' || code === 'P1002') {
-    return { status: 'unavailable', reason: 'connection' };
-  }
-  if (code === 'P2024') {
-    return { status: 'unavailable', reason: 'timeout' };
-  }
-  return { status: 'unavailable', reason: 'unknown' };
-}
+import { mapDbError } from './dbErrors';
 
 export async function getPayloadFromDb(mode: AppMode | null, dataSource: DataSource | null): Promise<DashboardPayload> {
   try {
@@ -79,6 +59,6 @@ export async function getPayloadFromDb(mode: AppMode | null, dataSource: DataSou
       dataSource,
     };
   } catch (err) {
-    return { state: mapDbError(err), snapshots: [], latestStats: null, mode, dataSource };
+    return { state: mapDbError('dbReader', err), snapshots: [], latestStats: null, mode, dataSource };
   }
 }

@@ -31,11 +31,11 @@ model Snapshot {
 
 /// Un archivo crudo de una captura, con sha256 para idempotencia (paso 9, D3-D4).
 model SnapshotFile {
-  sha256        String  @id
+  sha256        String   @id
   capturedAt    String
   originalName  String
-  offsetStart   Int
-  offsetEnd     Int
+  offsetStart   Int? // null si el cursor no se pudo decodificar (D3, fallback)
+  offsetEnd     Int?
   hasEventBlock Boolean
 
   snapshot Snapshot @relation(fields: [capturedAt], references: [capturedAt])
