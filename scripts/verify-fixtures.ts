@@ -1,6 +1,8 @@
 // FILE: scripts/verify-fixtures.ts
 // Verificación de aceptación de la Fase 1 (sección 8 y 12 del brief técnico).
-// Parsea fixtures/a.json + b.json con el MISMO módulo domain que usa la app y
+// Parsea fixtures-synthetic/a.json + b.json (harness de regresión; desde la
+// decisión de despliegue estático del 2026-11-21 los JSON REALES viven en
+// fixtures/ y este set sintético ya NO es la fuente del dashboard) con el MISMO módulo domain que usa la app y
 // comprueba los valores de referencia exactos + las reglas de búsqueda (D17).
 //
 //   bun run fixtures:verify
@@ -30,7 +32,7 @@ function checkTrue(name: string, cond: boolean, detail = ''): void {
 // Carga con el pipeline real de la app
 // ---------------------------------------------------------------------------
 
-const fixturesDir = path.join(process.cwd(), 'fixtures');
+const fixturesDir = path.join(process.cwd(), 'fixtures-synthetic');
 const fileA = JSON.parse(fs.readFileSync(path.join(fixturesDir, 'a.json'), 'utf-8'));
 const fileB = JSON.parse(fs.readFileSync(path.join(fixturesDir, 'b.json'), 'utf-8'));
 

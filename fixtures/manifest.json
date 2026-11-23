@@ -2,8 +2,8 @@
   {
     "capturedAt": "2026-11-02T14:00:00Z",
     "files": [
-      "a.json",
-      "b.json"
+      "graphql-A Nov_21_2026.json",
+      "graphql-B Nov_21_2026.json"
     ],
     "note": "Primera captura (fixtures sintéticos con los valores de referencia de la sección 8)"
   }

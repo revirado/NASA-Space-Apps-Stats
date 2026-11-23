@@ -1,0 +1,3693 @@
+[
+    {
+        "data": {
+            "openLocations": {
+                "totalCount": 598,
+                "edges": [
+                    {
+                        "cursor": "b2Zmc2V0OjUwMA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -72.9154,
+                                    40.7793
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTQ5OTA=",
+                                "title": "Brookhaven, NY",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/brookhaven/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "United States",
+                                "displayName": "Brookhaven, NY",
+                                "cachedRegistrations": 38,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUwMQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -2.58791,
+                                    51.454513
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTQ5OTE=",
+                                "title": "Bristol",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/bristol/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "United Kingdom",
+                                "displayName": "Bristol",
+                                "cachedRegistrations": 187,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUwMg==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -47.9297,
+                                    -15.7797
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTQ5OTI=",
+                                "title": "Brasília",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/brasilia/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Brazil",
+                                "displayName": "Brasília",
+                                "cachedRegistrations": 82,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUwMw==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    3.4728,
+                                    36.7594
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTQ5OTM=",
+                                "title": "Boumerdes",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/boumerdes/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Algeria",
+                                "displayName": "Boumerdes",
+                                "cachedRegistrations": 204,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUwNA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -71.0565364,
+                                    42.3555076
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTQ5OTQ=",
+                                "title": "Boston, MA",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/boston/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "United States",
+                                "displayName": "Boston, MA",
+                                "cachedRegistrations": 190,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUwNQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -73.890531,
+                                    9.970362
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTQ5OTU=",
+                                "title": "Bosconia",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/bosconia/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Colombia",
+                                "displayName": "Bosconia",
+                                "cachedRegistrations": 112,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUwNg==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -74.0817,
+                                    4.6097
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTQ5OTg=",
+                                "title": "Bogotá",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/bogota/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Colombia",
+                                "displayName": "Bogotá",
+                                "cachedRegistrations": 130,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUwNw==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -82.7347142,
+                                    9.2934179
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTQ5OTk=",
+                                "title": "Bocas del Toro",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/bocas-del-toro/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Panama",
+                                "displayName": "Bocas del Toro",
+                                "cachedRegistrations": 35,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUwOA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -96.1128243,
+                                    19.1658521
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMDA=",
+                                "title": "Boca del Río",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/boca-del-rio/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Mexico",
+                                "displayName": "Boca del Río",
+                                "cachedRegistrations": 161,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUwOQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -60.6737553,
+                                    2.8206339
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMDE=",
+                                "title": "Boa Vista",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/boa-vista/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Brazil",
+                                "displayName": "Boa Vista",
+                                "cachedRegistrations": 68,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUxMA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    24.4890979,
+                                    47.1392617
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMDM=",
+                                "title": "Bistrița",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/bistrita/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Romania",
+                                "displayName": "Bistrița",
+                                "cachedRegistrations": 59,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUxMQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    74.59,
+                                    42.87
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMDQ=",
+                                "title": "Bishkek",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/bishkek/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Kyrgyzstan",
+                                "displayName": "Bishkek",
+                                "cachedRegistrations": 437,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUxMg==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    113.0575317,
+                                    3.2088069
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMDU=",
+                                "title": "Bintulu",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/bintulu/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Malaysia",
+                                "displayName": "Bintulu",
+                                "cachedRegistrations": 137,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUxMw==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    31.3274387,
+                                    -17.3040996
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMDY=",
+                                "title": "Bindura",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/bindura/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Zimbabwe",
+                                "displayName": "Bindura",
+                                "cachedRegistrations": 12,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUxNA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -2.935013,
+                                    43.262985
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMDc=",
+                                "title": "Bilbao",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/bilbao/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Spain",
+                                "displayName": "Bilbao",
+                                "cachedRegistrations": 98,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUxNQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    77.4029,
+                                    23.2547
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMDg=",
+                                "title": "Bhopal",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/bhopal/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "India",
+                                "displayName": "Bhopal",
+                                "cachedRegistrations": 237,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUxNg==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    85.4389508,
+                                    27.6708449
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMTA=",
+                                "title": "Bhaktapur",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/bhaktapur/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Nepal",
+                                "displayName": "Bhaktapur",
+                                "cachedRegistrations": 243,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUxNw==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -77.094711,
+                                    38.984653
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMTI=",
+                                "title": "Bethesda, MD",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/bethesda/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "United States",
+                                "displayName": "Bethesda, MD",
+                                "cachedRegistrations": 128,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUxOA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    5.9886944,
+                                    47.2481781
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMTM=",
+                                "title": "Besançon",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/besancon/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "France",
+                                "displayName": "Besançon",
+                                "cachedRegistrations": 46,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUxOQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    7.4474468,
+                                    46.9479739
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMTQ=",
+                                "title": "Bern",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/bern/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Switzerland",
+                                "displayName": "Bern",
+                                "cachedRegistrations": 42,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUyMA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    13.404954,
+                                    52.520008
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMTU=",
+                                "title": "Berlin",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/berlin/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Germany",
+                                "displayName": "Berlin",
+                                "cachedRegistrations": 182,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUyMQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -51.5225643,
+                                    -29.1635297
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMTc=",
+                                "title": "Bento Gonçalves",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/bento-goncalves/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Brazil",
+                                "displayName": "Bento Gonçalves",
+                                "cachedRegistrations": 5,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUyMg==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -6.3219426,
+                                    32.3585554
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMTk=",
+                                "title": "Beni Mellal",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/beni-mellal/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Morocco",
+                                "displayName": "Beni Mellal",
+                                "cachedRegistrations": 447,
+                                "eventType": "In-Person",
+                                "registrationEnabled": false,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUyMw==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -7.9538378,
+                                    32.2359364
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMjA=",
+                                "title": "Ben Guerir",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/ben-guerir/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Morocco",
+                                "displayName": "Ben Guerir",
+                                "cachedRegistrations": 435,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUyNA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -48.501299,
+                                    -1.4563432
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMjE=",
+                                "title": "Belém",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/belem/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Brazil",
+                                "displayName": "Belém",
+                                "cachedRegistrations": 34,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUyNQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -43.9378,
+                                    -19.9208
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMjI=",
+                                "title": "Belo Horizonte",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/belo-horizonte/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Brazil",
+                                "displayName": "Belo Horizonte",
+                                "cachedRegistrations": 109,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUyNg==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    74.5270216,
+                                    15.9318986
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMjM=",
+                                "title": "Belagavi",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/belagavi/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "India",
+                                "displayName": "Belagavi",
+                                "cachedRegistrations": 175,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUyNw==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    35.5017767,
+                                    33.8937913
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMjQ=",
+                                "title": "Beirut",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/beirut/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Lebanon",
+                                "displayName": "Beirut",
+                                "cachedRegistrations": 538,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUyOA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    81.6966911,
+                                    7.7249146
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMjY=",
+                                "title": "Batticaloa",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/batticaloa/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Sri Lanka",
+                                "displayName": "Batticaloa",
+                                "cachedRegistrations": 28,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUyOQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    41.3605739,
+                                    37.8362496
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMjc=",
+                                "title": "Batman",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/batman/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Turkey",
+                                "displayName": "Batman",
+                                "cachedRegistrations": 83,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUzMA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    90.3496278,
+                                    22.7132876
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMjg=",
+                                "title": "Barisal",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/barisal/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Bangladesh",
+                                "displayName": "Barisal",
+                                "cachedRegistrations": 284,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUzMQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    2.1696972,
+                                    41.4364273
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMjk=",
+                                "title": "Barcelona",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/barcelona/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Spain",
+                                "displayName": "Barcelona",
+                                "cachedRegistrations": 148,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUzMg==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -16.6739256,
+                                    13.4633177
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMzA=",
+                                "title": "Banjul",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/banjul/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "The Gambia",
+                                "displayName": "Banjul",
+                                "cachedRegistrations": 55,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUzMw==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    100.4547783,
+                                    13.9041704
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMzE=",
+                                "title": "Bangkok",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/bangkok/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Thailand",
+                                "displayName": "Bangkok",
+                                "cachedRegistrations": 122,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUzNA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    77.5828337,
+                                    12.9606255
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMzI=",
+                                "title": "Bangalore",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/bangalore/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "India",
+                                "displayName": "Bangalore",
+                                "cachedRegistrations": 1065,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUzNQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    107.6191228,
+                                    -6.9174639
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMzM=",
+                                "title": "Bandung",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/bandung/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Indonesia",
+                                "displayName": "Bandung",
+                                "cachedRegistrations": 168,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUzNg==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -48.63258,
+                                    -26.9979839
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMzQ=",
+                                "title": "balneário camboriú",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/balneario-camboriu/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Brazil",
+                                "displayName": "balneário camboriú",
+                                "cachedRegistrations": 85,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUzNw==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    49.892,
+                                    40.3777
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMzU=",
+                                "title": "Baku",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/baku/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Azerbaijan",
+                                "displayName": "Baku",
+                                "cachedRegistrations": 75,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUzOA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -62.2663478,
+                                    -38.7183177
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMzY=",
+                                "title": "Bahía Blanca",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/bahia-blanca/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Argentina",
+                                "displayName": "Bahía Blanca",
+                                "cachedRegistrations": 49,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjUzOQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    44.3660671,
+                                    33.315241
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMzg=",
+                                "title": "Baghdad",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/baghdad/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Iraq",
+                                "displayName": "Baghdad",
+                                "cachedRegistrations": 148,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU0MA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    31.7317485,
+                                    30.1391666
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwMzk=",
+                                "title": "Badr City",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/badr-city/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Egypt",
+                                "displayName": "Badr City",
+                                "cachedRegistrations": 115,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU0MQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    10.2039477,
+                                    11.6726385
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNDA=",
+                                "title": "Azare",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/azare/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Nigeria",
+                                "displayName": "Azare",
+                                "cachedRegistrations": 29,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU0Mg==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    82.1997954,
+                                    26.7921605
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNDE=",
+                                "title": "Ayodhya",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/ayodhya/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "India",
+                                "displayName": "Ayodhya",
+                                "cachedRegistrations": 90,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU0Mw==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -74.2239,
+                                    -13.16
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNDM=",
+                                "title": "Ayacucho",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/ayacucho/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Peru",
+                                "displayName": "Ayacucho",
+                                "cachedRegistrations": 64,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU0NA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -23.6628054,
+                                    15.0958443
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNDQ=",
+                                "title": "Aveiro",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/aveiro/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Portugal",
+                                "displayName": "Aveiro",
+                                "cachedRegistrations": 24,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU0NQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -97.7431,
+                                    30.2672
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNDU=",
+                                "title": "Austin, TX",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/austin/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "United States",
+                                "displayName": "Austin, TX",
+                                "cachedRegistrations": 159,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU0Ng==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -7.9051876,
+                                    53.4179466
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNDY=",
+                                "title": "Athlone",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/athlone/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Ireland",
+                                "displayName": "Athlone",
+                                "cachedRegistrations": 242,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU0Nw==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    23.706383,
+                                    37.9989836
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNDc=",
+                                "title": "Athens",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/athens/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Greece",
+                                "displayName": "Athens",
+                                "cachedRegistrations": 157,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU0OA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -57.575926,
+                                    -25.2637399
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNDg=",
+                                "title": "Asunción",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/asuncion/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Paraguay",
+                                "displayName": "Asunción",
+                                "cachedRegistrations": 173,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU0OQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    71.4272222,
+                                    51.1655126
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNDk=",
+                                "title": "Astana",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/astana/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Kazakhstan",
+                                "displayName": "Astana",
+                                "cachedRegistrations": 187,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU1MA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    31.1859257,
+                                    27.1783117
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNTA=",
+                                "title": "Assiut",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/assiut/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Egypt",
+                                "displayName": "Assiut",
+                                "cachedRegistrations": 419,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU1MQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    58.32606289999999,
+                                    37.9600766
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNTE=",
+                                "title": "Ashgabat",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/ashgabat/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Turkmenistan",
+                                "displayName": "Ashgabat",
+                                "cachedRegistrations": 138,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU1Mg==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    44.8087498,
+                                    39.76624
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNTM=",
+                                "title": "Armash",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/armash/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Armenia",
+                                "displayName": "Armash",
+                                "cachedRegistrations": 12,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU1Mw==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -71.5355,
+                                    -16.3926
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNTY=",
+                                "title": "Arequipa",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/arequipa/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Peru",
+                                "displayName": "Arequipa",
+                                "cachedRegistrations": 444,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU1NA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -37.0717,
+                                    -10.9111
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNTg=",
+                                "title": "Aracaju",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/aracaju/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Brazil",
+                                "displayName": "Aracaju",
+                                "cachedRegistrations": 102,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU1NQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    36.0067408,
+                                    32.5610103
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNTk=",
+                                "title": "Ar-Ramtha",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/ar-ramtha/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Jordan",
+                                "displayName": "Ar-Ramtha",
+                                "cachedRegistrations": 199,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU1Ng==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    35.0063209,
+                                    29.5320522
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNjA=",
+                                "title": "Aqaba",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/aqaba/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Jordan",
+                                "displayName": "Aqaba",
+                                "cachedRegistrations": 24,
+                                "eventType": "Virtual",
+                                "registrationEnabled": false,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU1Nw==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    80.4131,
+                                    8.3122
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNjE=",
+                                "title": "Anuradhapura",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/anuradhapura/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Sri Lanka",
+                                "displayName": "Anuradhapura",
+                                "cachedRegistrations": 37,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU1OA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    30.7133233,
+                                    36.8968908
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNjI=",
+                                "title": "Antalya",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/antalya/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Turkey",
+                                "displayName": "Antalya",
+                                "cachedRegistrations": 263,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU1OQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    32.8597419,
+                                    39.9333635
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNjM=",
+                                "title": "Ankara",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/ankara/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Turkey",
+                                "displayName": "Ankara",
+                                "cachedRegistrations": 1705,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU2MA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -73.3872,
+                                    -13.6556
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNjQ=",
+                                "title": "Andahuaylas",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/andahuaylas/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Peru",
+                                "displayName": "Andahuaylas",
+                                "cachedRegistrations": 99,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU2MQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    72.9268247,
+                                    22.5495798
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNjU=",
+                                "title": "Anand",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/anand/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "India",
+                                "displayName": "Anand",
+                                "cachedRegistrations": 73,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU2Mg==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    4.9041389,
+                                    52.3675734
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNjY=",
+                                "title": "Amsterdam",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/amsterdam/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Netherlands",
+                                "displayName": "Amsterdam",
+                                "cachedRegistrations": 116,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU2Mw==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    35.9105776,
+                                    31.9543786
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNjg=",
+                                "title": "Amman",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/amman/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Jordan",
+                                "displayName": "Amman",
+                                "cachedRegistrations": 777,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU2NA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    80.3667,
+                                    16.5667
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNjk=",
+                                "title": "Amaravati",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/amaravati/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "India",
+                                "displayName": "Amaravati",
+                                "cachedRegistrations": 350,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU2NQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    76.8897,
+                                    43.2389
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNzA=",
+                                "title": "Almaty",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/almaty/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Kazakhstan",
+                                "displayName": "Almaty",
+                                "cachedRegistrations": 581,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU2Ng==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    3.0587561,
+                                    36.753768
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNzE=",
+                                "title": "Algiers",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/algiers/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Algeria",
+                                "displayName": "Algiers",
+                                "cachedRegistrations": 96,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU2Nw==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    29.9158,
+                                    31.2018
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNzI=",
+                                "title": "Alexandria",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/alexandria/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Egypt",
+                                "displayName": "Alexandria",
+                                "cachedRegistrations": 836,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU2OA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -106.6504,
+                                    35.0844
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNzM=",
+                                "title": "Albuquerque, NM",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/albuquerque/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "United States",
+                                "displayName": "Albuquerque, NM",
+                                "cachedRegistrations": 10,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU2OQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    23.5711345,
+                                    46.0863521
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNzQ=",
+                                "title": "Alba-Iulia",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/alba-iulia/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Romania",
+                                "displayName": "Alba-Iulia",
+                                "cachedRegistrations": 148,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU3MA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    50.1971381,
+                                    26.2171906
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNzU=",
+                                "title": "Al-Khobar",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/al-khobar/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Saudi Arabia",
+                                "displayName": "Al-Khobar",
+                                "cachedRegistrations": 216,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU3MQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    55.7228542,
+                                    24.2231534
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNzY=",
+                                "title": "Al Ain",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/al-ain/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "United Arab Emirates",
+                                "displayName": "Al Ain",
+                                "cachedRegistrations": 99,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU3Mg==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    34.0297,
+                                    38.368626
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNzc=",
+                                "title": "Aksaray",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/aksaray/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Turkey",
+                                "displayName": "Aksaray",
+                                "cachedRegistrations": 165,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU3Mw==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    74.6399163,
+                                    26.4498954
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNzg=",
+                                "title": "Ajmer",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/ajmer/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "India",
+                                "displayName": "Ajmer",
+                                "cachedRegistrations": 158,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU3NA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    55.5136433,
+                                    25.4052165
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwNzk=",
+                                "title": "Ajman",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/ajman/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "United Arab Emirates",
+                                "displayName": "Ajman",
+                                "cachedRegistrations": 127,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU3NQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    72.5712864,
+                                    23.0225237
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwODA=",
+                                "title": "Ahmedabad",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/ahmedabad/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "India",
+                                "displayName": "Ahmedabad",
+                                "cachedRegistrations": 373,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU3Ng==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    7.8973228,
+                                    51.7600942
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwODE=",
+                                "title": "Ahlen",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/ahlen/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Germany",
+                                "displayName": "Ahlen",
+                                "cachedRegistrations": 130,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU3Nw==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    74.734655,
+                                    19.0914655
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwODI=",
+                                "title": "Ahilyanagar",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/ahilyanagar/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "India",
+                                "displayName": "Ahilyanagar",
+                                "cachedRegistrations": 45,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU3OA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -9.5925444,
+                                    30.4280405
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwODM=",
+                                "title": "Agadir",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/agadir/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Morocco",
+                                "displayName": "Agadir",
+                                "cachedRegistrations": 125,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU3OQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    38.7524635,
+                                    9.0191936
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwODU=",
+                                "title": "Addis Ababa",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/addis-ababa/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Ethiopia",
+                                "displayName": "Addis Ababa",
+                                "cachedRegistrations": 464,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU4MA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    35.3308285,
+                                    36.9914194
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwODY=",
+                                "title": "Adana",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/adana/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Turkey",
+                                "displayName": "Adana",
+                                "cachedRegistrations": 82,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU4MQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -0.187,
+                                    5.6037
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwODc=",
+                                "title": "Accra",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/accra/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Ghana",
+                                "displayName": "Accra",
+                                "cachedRegistrations": 191,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU4Mg==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    7.4985259,
+                                    9.0562646
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwODg=",
+                                "title": "Abuja",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/abuja/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Nigeria",
+                                "displayName": "Abuja",
+                                "cachedRegistrations": 168,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU4Mw==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    54.3773438,
+                                    24.453884
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwODk=",
+                                "title": "Abu Dhabi",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/abu-dhabi/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "United Arab Emirates",
+                                "displayName": "Abu Dhabi",
+                                "cachedRegistrations": 737,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU4NA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -4.019603,
+                                    5.3252258
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwOTE=",
+                                "title": "Abidjan",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/abidjan/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Côte d'Ivoire",
+                                "displayName": "Abidjan",
+                                "cachedRegistrations": 107,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU4NQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    6.08342,
+                                    50.77664
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwOTI=",
+                                "title": "Aachen",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/aachen/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Germany",
+                                "displayName": "Aachen",
+                                "cachedRegistrations": 147,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU4Ng==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    30.9187827,
+                                    29.9285429
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwOTM=",
+                                "title": "6 of October",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/6-of-october/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Egypt",
+                                "displayName": "6 of October",
+                                "cachedRegistrations": 1295,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU4Nw==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -70.6908,
+                                    19.4504
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwOTc=",
+                                "title": "Santiago, Dominican Republic",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/santiago-dominican-republic/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Dominican Republic",
+                                "displayName": "Santiago, Dominican Republic",
+                                "cachedRegistrations": 421,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU4OA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -110.3151,
+                                    24.1009
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUwOTk=",
+                                "title": "La Paz, Mexico",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/la-paz-mexico/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Mexico",
+                                "displayName": "La Paz, Mexico",
+                                "cachedRegistrations": 63,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU4OQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    78.4772439,
+                                    17.406498
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUxMDA=",
+                                "title": "Hyderabad, India",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/hyderabad-india/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "India",
+                                "displayName": "Hyderabad, India",
+                                "cachedRegistrations": 1184,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU5MA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -77.0369,
+                                    38.9072
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUxMDQ=",
+                                "title": "Universal Event",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/universal-event/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Anywhere in the World",
+                                "displayName": "Universal Event",
+                                "cachedRegistrations": 20369,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU5MQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -70.3975022,
+                                    -23.6509279
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUxMDU=",
+                                "title": "Antofagasta",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/antofagasta/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Chile",
+                                "displayName": "Antofagasta",
+                                "cachedRegistrations": 68,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU5Mg==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    35.2206254,
+                                    32.227551
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUxMDk=",
+                                "title": "Nablus",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/nablus/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Palestinian Territories",
+                                "displayName": "Nablus",
+                                "cachedRegistrations": 376,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU5Mw==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    27.9161921,
+                                    -26.0758717
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUxMTA=",
+                                "title": "Johannesburg",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/johannesburg/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "South Africa",
+                                "displayName": "Johannesburg",
+                                "cachedRegistrations": 62,
+                                "eventType": "In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU5NA==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -77.0909809,
+                                    38.8816208
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUxMTE=",
+                                "title": "Arlington, VA",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/arlington-va/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "United States",
+                                "displayName": "Arlington, VA",
+                                "cachedRegistrations": 124,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU5NQ==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -81.6943605,
+                                    41.49932
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUxMTI=",
+                                "title": "Cleveland, OH",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/cleveland-oh/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "United States",
+                                "displayName": "Cleveland, OH",
+                                "cachedRegistrations": 52,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU5Ng==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -84.03502460000001,
+                                    9.9338724
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUxMTM=",
+                                "title": "San Jose, Costa Rica",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/san-jose-costa-rica/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "Costa Rica",
+                                "displayName": "San Jose, Costa Rica",
+                                "cachedRegistrations": 540,
+                                "eventType": "Virtual & In-Person",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": true,
+                                "isVirtual": false,
+                                "isWaitlist": false,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    },
+                    {
+                        "cursor": "b2Zmc2V0OjU5Nw==",
+                        "node": {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -80.7014662,
+                                    41.1539465
+                                ],
+                                "__typename": "Geometry"
+                            },
+                            "properties": {
+                                "id": "aWQ6NTUxMTQ=",
+                                "title": "Girard, OH",
+                                "meta": {
+                                    "type": "LOCATION",
+                                    "htmlUrl": "https://www.spaceappschallenge.org/2026/local-events/girard/",
+                                    "__typename": "ExpandedPageMeta"
+                                },
+                                "country": "United States",
+                                "displayName": "Girard, OH",
+                                "cachedRegistrations": 26,
+                                "eventType": "Virtual",
+                                "registrationEnabled": true,
+                                "isRegistrationOpen": false,
+                                "isHostEvent": false,
+                                "isHybrid": false,
+                                "isVirtual": true,
+                                "isWaitlist": true,
+                                "__typename": "LocationPage"
+                            },
+                            "__typename": "LocationFeature"
+                        },
+                        "__typename": "LocationFeatureEdge"
+                    }
+                ],
+                "pageInfo": {
+                    "endCursor": "b2Zmc2V0OjU5Nw==",
+                    "hasNextPage": false,
+                    "__typename": "PageInfo"
+                },
+                "__typename": "LocationFeaturesConnection"
+            }
+        }
+    },
+    {
+        "data": {
+            "viewer": {
+                "user": {
+                    "id": "aWQ6ZDEzMjk3MGQtNGUyYy00NDk2LWFiOGYtZTc4MTlkMDIwNGFh",
+                    "username": "revirado",
+                    "email": "ariellamas.tech@gmail.com",
+                    "fullName": "Ariel Lamas",
+                    "displayName": "",
+                    "country": "Argentina",
+                    "organization": "local developer group",
+                    "organizationTitle": "frontend software developer",
+                    "education": "High School Diploma/GED/equivalent",
+                    "industry": "Technology",
+                    "avatar": {
+                        "id": "aWQ6MzkyNDk5",
+                        "meta": {
+                            "type": "images.CustomImage",
+                            "downloadUrl": "https://assets.spaceappschallenge.org/media/original_images/Image_y9ph9xy9ph9xy9ph.png",
+                            "__typename": "ImageMeta"
+                        },
+                        "title": "avatar.06:38:14.012807",
+                        "alt": "avatar.06:38:14.012807",
+                        "caption": "avatar.06:38:14.012807",
+                        "displaySize": "or",
+                        "rendition": {
+                            "url": "https://assets.spaceappschallenge.org/media/images/Image_y9ph9xy9ph9xy9ph.2e16d0ba.fill-134x134.png",
+                            "fullUrl": "https://assets.spaceappschallenge.org/media/images/Image_y9ph9xy9ph9xy9ph.2e16d0ba.fill-134x134.png",
+                            "height": 134,
+                            "width": 134,
+                            "__typename": "BaseImage"
+                        },
+                        "__typename": "DefaultImage"
+                    },
+                    "isActive": true,
+                    "isSuperuser": false,
+                    "dateJoined": "2025-09-30T04:02:25.510776Z",
+                    "__typename": "User"
+                },
+                "currentEvent": "aWQ6NA==",
+                "eventRegistrations": [
+                    {
+                        "__typename": "EventRegistration",
+                        "id": "aWQ6MjM5OTc5",
+                        "createdAt": "2025-09-30T04:06:55.815481Z",
+                        "modifiedAt": "2025-09-30T04:06:55.845334Z",
+                        "cachedAwardsEligible": null,
+                        "termsConditions": null,
+                        "event": "aWQ6Mw==",
+                        "user": "aWQ6ZDEzMjk3MGQtNGUyYy00NDk2LWFiOGYtZTc4MTlkMDIwNGFh",
+                        "affiliations": null,
+                        "languages": null,
+                        "skills": null
+                    }
+                ],
+                "localEvents": [
+                    {
+                        "__typename": "LocationPage",
+                        "id": "aWQ6NTQ1NTE=",
+                        "title": "Salta",
+                        "meta": {
+                            "type": "LOCATION",
+                            "slug": "salta",
+                            "firstPublishedAt": null,
+                            "lastPublishedAt": null,
+                            "relativeUrl": "/2026/local-events/salta/",
+                            "live": true,
+                            "parent": null,
+                            "__typename": "ExpandedPageMeta"
+                        },
+                        "displayName": ""
+                    }
+                ],
+                "judging": [],
+                "judgingAssignments": [],
+                "localEventRegistrations": [
+                    {
+                        "__typename": "LocalEventRegistration",
+                        "id": "aWQ6MjQzMDU2",
+                        "createdAt": "2025-09-30T04:09:06.758394Z",
+                        "modifiedAt": "2025-09-30T04:09:06.758411Z",
+                        "user": "aWQ6ZDEzMjk3MGQtNGUyYy00NDk2LWFiOGYtZTc4MTlkMDIwNGFh",
+                        "event": "aWQ6Mw==",
+                        "location": "aWQ6MzA3NjU=",
+                        "locationDetails": {
+                            "id": "aWQ6MzA3NjU=",
+                            "title": "Salta",
+                            "displayName": "",
+                            "meta": {
+                                "type": "LOCATION",
+                                "slug": "salta",
+                                "relativeUrl": "/2025/local-events/salta/",
+                                "__typename": "ExpandedPageMeta"
+                            },
+                            "__typename": "LocationPage"
+                        },
+                        "level": "Registered",
+                        "participation": "In-Person"
+                    }
+                ],
+                "teamJoinRequests": [],
+                "challenges": [
+                    {
+                        "id": "aWQ6MzEzMTQ=",
+                        "title": "Embiggen Your Eyes!",
+                        "featuredImage": null,
+                        "meta": {
+                            "type": "CHALLENGE",
+                            "slug": "embiggen-your-eyes",
+                            "firstPublishedAt": null,
+                            "lastPublishedAt": null,
+                            "relativeUrl": "/2025/challenges/embiggen-your-eyes/",
+                            "live": true,
+                            "parent": null,
+                            "__typename": "ExpandedPageMeta"
+                        },
+                        "categories": null,
+                        "event": "aWQ6Mw==",
+                        "skills": null,
+                        "excerpt": null,
+                        "__typename": "ChallengePage"
+                    }
+                ],
+                "teams": [
+                    {
+                        "id": "aWQ6NDgyMzI=",
+                        "meta": {
+                            "type": "TEAM",
+                            "slug": "nabla",
+                            "firstPublishedAt": null,
+                            "lastPublishedAt": null,
+                            "relativeUrl": "/2025/find-a-team/nabla/",
+                            "live": true,
+                            "parent": null,
+                            "__typename": "ExpandedPageMeta"
+                        },
+                        "title": "ー∇ { Nabla }",
+                        "event": "aWQ6Mw==",
+                        "shortName": "",
+                        "owner": "aWQ6ZDEzMjk3MGQtNGUyYy00NDk2LWFiOGYtZTc4MTlkMDIwNGFh",
+                        "projectSubmitted": true,
+                        "__typename": "TeamPage"
+                    }
+                ],
+                "__typename": "Viewer"
+            }
+        }
+    }
+]

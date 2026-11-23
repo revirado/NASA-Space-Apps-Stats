@@ -33,8 +33,8 @@ con parseo en navegador, validación y escritura transaccional.
 | --- | --- |
 | 1 · Prueba de concepto sin DB (globo, buscador, rankings, tarjetas, estados, i18n, paleta) | **Completa y verificada** (63/63 + navegador) |
 | 2 · Terminal de carga + DB (Neon en prod) | **Completa en sandbox/SQLite y verificada en navegador** (carga→guardar→leer, idempotencia, 404 por modo). Neon/Vercel queda para la Fase 3 |
-| 3 · Despliegue en la nube (Vercel, dos proyectos, switcher ENG default) | Pendiente |
-| 4 · Evolución con 2+ capturas, manifiesto masivo, exportación | `domain/evolution.ts` listo; UI básica de evolución lista; falta carga real |
+| 3 · Despliegue en la nube | **Rediseñado 2026-11-21**: UN deploy estático (dashboard-only sobre fixtures reales, sin DB, sin terminal online) — receta en sección 9.1. Terminal online / dos dominios = TODO con recetas listas en 9.2 (no hay que re-analizar código). Falta validar el switcher ENG default en el deploy |
+| 4 · Evolución con 2+ capturas, manifiesto masivo, exportación | `domain/evolution.ts` y UI listos; SIN DB ya funciona si el manifest tiene 2+ entradas por fecha (serie temporal en fixtures); la carga real por terminal requiere la receta 9.2 |
 | Después · API oficial como fuente más | Pendiente |
 
 ## 3. Mapa de archivos
@@ -117,12 +117,11 @@ Leyenda: **S** = solo servidor · **C** = componente cliente · **P** = puro (si
 
 | Archivo | Rol |
 | --- | --- |
-| `fixtures/a.json` | JSON crudo sintético: `contentFilterForm` + `event` + 500 edges (offsets 0–499, `hasNextPage:true`) |
-| `fixtures/b.json` | Solo `openLocations` con 100 edges (offsets 500–599, `hasNextPage:false`) |
-| `fixtures/manifest.json` | Lista `{capturedAt, files, note}` (sección 9): captura del 2026-11-02T14:00:00Z |
+| `fixtures/` | **Datos REALES del autor (deploy estático)**: JSON crudos de la plataforma con nombres libres (D1–D2 clasifica por contenido) + `manifest.json` — array de capturas `{capturedAt, files, note}`; una entrada por fecha, 2+ entradas = serie temporal |
+| `fixtures-synthetic/` | Harness sintético de regresión (valores de sección 8 exactos): `a.json` (contentFilterForm + event + 500 edges), `b.json` (100 edges), `manifest.json`. NO se despliega; `fixtures:generate`/`fixtures:verify` apuntan acá desde 2026-11-21 |
 | `scripts/countries-data.mjs` | Datos de apoyo del generador: 115 países con pool de ciudades, centroides y locaciones fijas |
-| `scripts/generate-fixtures.ts` | Genera los fixtures sintéticos con los valores de referencia de la sección 8 (`bun run fixtures:generate`) |
-| `scripts/verify-fixtures.ts` | **Prueba de regresión**: parsea los fixtures con el domain real y comprueba 63 valores/reglas exactos (`bun run fixtures:verify`) |
+| `scripts/generate-fixtures.ts` | Genera el harness sintético en `fixtures-synthetic/` (`bun run fixtures:generate`) |
+| `scripts/verify-fixtures.ts` | **Prueba de regresión**: parsea `fixtures-synthetic/` con el domain real y comprueba 63 valores/reglas exactos (`bun run fixtures:verify`) |
 
 ### Otros
 
@@ -130,8 +129,8 @@ Leyenda: **S** = solo servidor · **C** = componente cliente · **P** = puro (si
 | --- | --- |
 | `prisma/schema.prisma` | Modelo sección 6 adaptado a SQLite (`Snapshot`, `SnapshotFile`, `EventStat`, `CountryMap`, `SchemaVersion`); en Neon: provider postgres + `@db.Timestamptz` |
 | `public/geo/countries-110m.geojson` | Polígonos de continentes (Natural Earth 110m) para el globo |
-| `.env.example` | Variables de la sección 15 |
-| `db/custom.db` | SQLite del sandbox (descartable) |
+| `.env.example` | Variables de la sección 15 + recetas dev/prod (semántica de rutas SQLite, escenarios A/B, dos despliegues Fase 3). Ya no lo traga el `.gitignore` (`!.env.example`) — esta vez SÍ está committeado |
+| `db/custom.db` | SQLite del sandbox (descartable). **Fuera del git** desde 2026-11-21: se reconstruye vacía con `npm run db:push` |
 
 ## 4. Contratos y decisiones clave (resumen D1–D20)
 
@@ -154,19 +153,33 @@ Leyenda: **S** = solo servidor · **C** = componente cliente · **P** = puro (si
 
 600 únicas · 599 sin Universal · 115 países + Anywhere in the World · suma **104.784** (89.956 sin Universal) · tipos: In-Person 235/27.979 · Virtual 119/27.714 (12.886 sin Universal) · Híbridas 246/49.091 · 4 con 0 · global 124.934 / 680 / 17.794 · derivado **20.150** · top países: India 72, US 55, Brazil 44, Turkey 28, Mexico 25, Egypt 16, Canada 16, Argentina 16, Peru 15, Colombia 13 · top locaciones: Cairo 3.474, Harohalli 2.364, Dhaka 2.022, Ankara 1.343, Chennai 1.255, Delhi 1.240, Shebeen El-Kom 988, Karachi 979, Tashkent 947 · Salta 112 híbrida `[-65.4231976, -24.7821269]` · buscar `sanliurfa` → Şanlıurfa.
 
-> Los fixtures son sintéticos pero reproducen estos valores **exactamente**. Cuando existan los JSON reales, reemplazar `fixtures/a.json`, `b.json` y la fecha en `manifest.json` (misma estructura) sin tocar código; `fixtures:verify` debe seguir dando 63/63.
+> Los fixtures son sintéticos pero reproducen estos valores **exactamente**. Desde la decisión de despliegue estático (2026-11-21) el set sintético vive en `fixtures-synthetic/` como harness de regresión (`fixtures:generate` / `fixtures:verify` apuntan ahí), y `fixtures/` está reservado a los JSON crudos REALES: reemplazar su contenido y actualizar las entradas de `manifest.json` (misma estructura, una por fecha) sin tocar código. El dashboard muestra la captura más reciente del manifest (D16) y la evolución compara entradas consecutivas.
 
 ## 6. Comandos
 
 ```bash
 bun run dev                 # dev server :3000 (siempre en background; log en dev.log)
 bun run lint                # ESLint (debe salir limpio)
-bun run fixtures:generate   # regenera fixtures sintéticos (seed determinista 20261104)
-bun run fixtures:verify     # 63 comprobaciones de sección 8 + D17 (regresión)
+bun run fixtures:generate   # regenera el harness sintético en fixtures-synthetic/ (seed determinista 20261104)
+bun run fixtures:verify     # 63 comprobaciones de sección 8 + D17 (regresión, contra fixtures-synthetic/)
 bun run db:push             # aplica prisma/schema.prisma a SQLite
 npm run build               # next build — SIN standalone, listo para Vercel (pedido del autor)
 npm run start               # next start — corre el build de producción, sin bun
 ```
+
+`postinstall: prisma generate` está en package.json: el build de Vercel genera
+el cliente Prisma sin necesitar `DATABASE_URL` (el deploy estático no usa DB).
+
+> **Semántica de rutas SQLite (hallazgo 2026-11-21, verificado empíricamente):**
+> la ruta de `file:` se resuelve relativa a `prisma/schema.prisma`, NO a la raíz:
+> `file:../db/custom.db` → `<raíz>/db/custom.db` (recomendado); `file:./db/custom.db`
+> → `prisma/db/custom.db` (funciona pero queda escondida). El CLI (`db:push`)
+> SÍ crea carpetas si faltan; el **runtime NO** — si la carpeta no existe, toda
+> query muere con `Error code 14: Unable to open the database file`, que Prisma
+> reporta como PrismaClientInitializationError **sin código P** → `mapDbError`
+> lo clasifica `unavailable` ("No se pudo conectar con la base de datos"), no
+> `uninitialized`. Los scripts `db:*` de package.json son prisma puro: funcionan
+> con `npm run db:push` / `npx prisma db push` sin bun.
 
 ## 7. Variables de entorno (sección 15)
 
@@ -174,8 +187,9 @@ npm run start               # next start — corre el build de producción, sin 
 | --- | --- | --- |
 | `APP_MODE` | dashboard \| terminal \| all (`all` solo dev) | qué vistas se habilitan; falta en prod → estado `unconfigured` |
 | `DATA_SOURCE` | fixtures \| db | origen de los datos |
-| `DATABASE_URL_READ` / `DATABASE_URL_WRITE` | cadena Neon | lectura (rol read-only) / escritura (solo terminal) |
-| `TERMINAL_TOKEN` | secreto | acceso a la terminal (Fase 2) |
+| `DATABASE_URL` | SQLite en dev (`file:../db/custom.db`) / cadena Neon en prod | **Hoy es la única credencial cableada**: la usan tanto `dbReader` como `dbWriter` |
+| `DATABASE_URL_READ` / `DATABASE_URL_WRITE` | cadena Neon (Fase 3) | plan de la sección 15: rol read-only para el dashboard, rol de escritura solo para la terminal — **aún no cableado** en el código |
+| `TERMINAL_TOKEN` | secreto | APIs de escritura; OPCIONAL en dev (permite sin token, warning en log); en prod sin token → 503 «sin configuración»; definido → obligatorio (`x-terminal-token`, timingSafeEqual) |
 
 En dev, si faltan: `APP_MODE=all`, `DATA_SOURCE=fixtures`.
 
@@ -190,7 +204,83 @@ En dev, si faltan: `APP_MODE=all`, `DATA_SOURCE=fixtures`.
 7. **Footer sticky**: contenedor `min-h-screen flex flex-col` + footer `mt-auto` (ya en `DashboardApp`); no romperlo.
 8. Cada archivo nuevo arranca con `// FILE: ruta — propósito` y se suma a la tabla de la sección 3.
 
-## 9. Registro de iteraciones (append-only)
+## 9. Plan de despliegue y decisiones de infraestructura (2026-11-21)
+
+**Decisión del autor**: el evento terminó y los datos quedan congelados →
+UN solo despliegue estático, sin DB y sin terminal online. La terminal queda
+como herramienta local (validación/parseo en el navegador) y como TODO de
+feature. Si en el futuro se quieren dominios extra o la terminal online,
+aplicar la receta de esta sección SIN re-analizar el código.
+
+### 9.1 Receta vigente — deploy estático HOY (Vercel, cero DB)
+
+1. Datos: reemplazar el contenido de `fixtures/` por los JSON crudos reales
+   (nombres libres: el parser clasifica por contenido, D1–D2). Una entrada en
+   `fixtures/manifest.json` por fecha de captura — `capturedAt` ISO UTC real.
+   **2+ entradas = serie temporal** para la tarjeta de evolución: el manifest
+   ya es un array, el dashboard muestra la última captura y EvolutionCard
+   compara consecutivas. El set sintético de regresión vive aparte en
+   `fixtures-synthetic/` y NO forma parte del deploy.
+2. Variables de entorno en Vercel (Environment Variables): `APP_MODE=dashboard`
+   y `DATA_SOURCE=fixtures`. Nada más: sin `DATABASE_URL`, sin Neon, sin
+   `TERMINAL_TOKEN`. `postinstall: prisma generate` ya está en package.json.
+3. Flujo: push a GitHub → Vercel «New Project» → importar el repo → deploy con
+   el default (`next build`; el repo NO usa `output: standalone`).
+4. Verificación previa local: `npm run build && npm start` con
+   `APP_MODE=dashboard DATA_SOURCE=fixtures` → el dashboard debe mostrar los
+   valores reales y la fecha de la última entrada del manifest (D16).
+5. Online: `/terminal` y las APIs de escritura responden **404** (modo
+   dashboard) — la terminal solo existe en local (`npm run dev`).
+   `fixtures:verify` ya no aplica al contenido real (sus 63 valores son del
+   set sintético); sigue corriendo contra `fixtures-synthetic/`.
+
+### 9.2 TODO de feature — terminal online (futuro)
+
+La terminal está COMPLETA y verificada (Fase 2); lo único que falta es
+exponerla. Dos variantes, en orden de esfuerzo:
+
+**Variante A — un despliegue con terminal online (mínima):**
+1. `src/config/appMode.ts`: permitir `'all'` en producción (hoy lo rechaza:
+   `if (isProduction && value === 'all') return null;` — quitar esa línea y su
+   comentario).
+2. `src/app/terminal/page.tsx`: metadata `robots: noindex`.
+3. `src/lib/db.ts`: segundo cliente Prisma (escritura) leyendo
+   `DATABASE_URL_WRITE` con fallback a `DATABASE_URL`; que `dbReader` use el
+   de lectura (`DATABASE_URL_READ`) y `dbWriter` el de escritura. Hoy ambos
+   comparten el único `DATABASE_URL`.
+4. `prisma/schema.prisma`: `provider = "postgresql"` + `capturedAt DateTime
+   @db.Timestamptz`; `prisma db push` contra Neon.
+5. Vercel (un proyecto): `APP_MODE=all`, `DATA_SOURCE=db`,
+   `DATABASE_URL_READ` (rol read-only de Neon), `DATABASE_URL_WRITE` (rol de
+   escritura), `TERMINAL_TOKEN`. Sin token en prod la escritura responde 503
+   (guard existente); con token definido, obligatorio en `x-terminal-token`.
+6. El candado real ya existe y está verificado: TODAS las `/api/terminal/*`
+   (listar, guardar, borrar) pasan por `guardTerminal` (timingSafeEqual; sin
+   token la lista ni siquiera carga). La URL oculta y el noindex son confort,
+   no seguridad.
+
+**Variante B — dos despliegues / dos dominios:**
+1. Pasos 3–4 de la variante A (split READ/WRITE + schema Postgres).
+2. NO tocar `appMode.ts`: `'dashboard'` y `'terminal'` ya son válidos en prod.
+3. Proyecto Dashboard (dominio público): `APP_MODE=dashboard`,
+   `DATA_SOURCE=db`, `DATABASE_URL` = rol read-only → `/terminal` 404.
+4. Proyecto Terminal (dominio privado): `APP_MODE=terminal`, `DATABASE_URL` =
+   rol de escritura, `TERMINAL_TOKEN`.
+5. Rotación de credenciales: token → env de Vercel; contraseñas de roles →
+   consola de Neon. (Opcional no implementado: hash del token en una tabla
+   para rotarlo desde la consola SQL de Neon sin redeploy.)
+
+### 9.3 Serie temporal / evolución (futuro)
+
+- HOY: si el autor conservó JSONs de varias fechas, agregar una entrada por
+  fecha al `fixtures/manifest.json` → la evolución funciona SIN DB.
+- Fase 4 real (carga por terminal, manifiesto masivo, exportación): requiere
+  la variante A o B + Neon. `domain/evolution.ts` y la UI ya consumen el array
+  `snapshots` tal cual (fixtures o DB, indistinto).
+- Tip de reserva: commitear cada set de JSON con su fecha = serie temporal
+  recuperable desde el historial de git.
+
+## 10. Registro de iteraciones (append-only)
 
 | Fecha | Cambios | Archivos tocados |
 | --- | --- | --- |
@@ -200,3 +290,5 @@ En dev, si faltan: `APP_MODE=all`, `DATA_SOURCE=fixtures`.
 | 2026-11-21 | **Restauración del workspace + build/start Vercel-ready**: el sandbox se restableció a la plantilla vacía y se perdió todo el código; restaurado íntegramente desde el tar que subió el autor (`.git` incluido con la historia real; fixtures, geojson, PROJECT_INDEX, componentes — verificado con `fixtures:verify` 63/63, lint limpio y navegador: dashboard completo con valores de sección 8 exactos, búsqueda `sanliurfa`→Şanlıurfa, switcher ESPA, globo rotando, consola limpia). Config corregida (pedido explícito del autor, pensado para Vercel): `next.config.ts` **sin** `output:"standalone"`, `"build": "next build"`, `"start": "next start"` (sin bun). Recreado `.env.example` (no vino en el tar). **Advertencia de plataforma**: el `build.sh` interno del sandbox auto-inyecta `output:"standalone"` en next.config.ts si falta, al publicar desde el sandbox (modelo FC propio) — si eso pasa, re-quitar la línea | `package.json`, `next.config.ts`, `.env.example`, `.gitignore`, PROJECT_INDEX.md |
 | 2026-11-21 | **Repo: `.env` fuera del tracking** (reportado por el autor: git detectaba cambios aunque `.env*` está en `.gitignore`). Causa: `.env` quedó trackeado desde el Initial commit de la plantilla (`720d0cb`) y gitignore solo aplica a archivos no trackeados. Fix en sandbox: `git rm --cached .env` + commit (`df9a9e1`); el autor corre lo mismo en su local | `.env` (untracked), PROJECT_INDEX.md |
 | 2026-11-21 | **Fase 2 completa: terminal de carga** (rutas `/`→redirect, `/dashboard`, `/terminal` + APIs). UI estilo terminal (mono, paleta D18, textos D19 en `terminal.*`): drag&drop + parseo COMPLETO en navegador con domain isomórfico (clasificación D1–D2, sha256 WebCrypto paso 5, validación D3–D4, resumen previo paso 8, advertencias no bloqueantes), fecha de captura obligatoria + zona horaria con conversión de pared→UTC en dos pasadas DST (D15, `lib/timezone.ts`), guardado vía API con reemplazo confirmado (AlertDialog) y token en sessionStorage. Backend: `dbWriter.ts` = SnapshotWriter con transacción única + idempotencia por sha256 (unchanged/needs_confirmation/saved) + upsert `schema_version`; APIs con `terminalGuard` (404 por modo — verificado: con `APP_MODE=dashboard` GET /terminal, POST y GET responden 404 y /dashboard 200; token con timingSafeEqual; 503 «sin configuración» en prod sin token; dev sin token permitido con warning). Esquema: `SnapshotFile.offsetStart/offsetEnd` ahora `Int?` (fallback D3 cuando el cursor no decodifica). `dbReader` refactorizado para compartir `dbErrors.ts`. **Verificado en navegador**: a.json+b.json → reconocidos por contenido (no por nombre), captura guardada con UTC preview, lista con 1 fila; re-guardado idéntico → «unchanged»; `DATA_SOURCE=db` → dashboard lee de la DB con valores de sección 8 idénticos y capturedAt del autor (D16). Lint limpio, 63/63. Nota: los mensajes de diagnóstico del domain (advertencias/rechazos) se muestran en su idioma original (español) — son datos del parser, no strings de UI | `src/app/page.tsx`, `src/app/dashboard/page.tsx`, `src/app/terminal/page.tsx`, `src/app/api/terminal/**`, `src/components/terminal/**` (7 archivos), `src/data/dbWriter.ts`, `src/data/dbErrors.ts`, `src/data/dbReader.ts`, `src/lib/{timezone,hash,terminalGuard}.ts`, `src/i18n/dictionaries.ts`, `prisma/schema.prisma`, PROJECT_INDEX.md |
+| 2026-11-21 | **Diagnóstico del fallo local de la terminal + hardening de configuración**: el autor, en su máquina (`APP_MODE=all`, `npm run dev`), subió los JSONs a `/terminal` y al guardar obtuvo "No se pudo conectar con la base de datos. Tus archivos siguen parseados acá". Reproducido y con causa raíz confirmada: su `.env` tenía `DATABASE_URL=file:./db/custom.db`, que Prisma resuelve relativo a `prisma/` (verificado empíricamente en CLI y runtime), y el runtime NO crea carpetas → `Error code 14: Unable to open the database file` → error sin código P → `mapDbError` → `unavailable`. **No era Neon**: la nube entra en Fase 3; en local la terminal escribe en SQLite. Fixes: (1) `.gitignore`: `!.env.example` (el patrón `.env*` lo excluía — por eso había desaparecido tras el reinicio del contenedor) y `db/*.db` ignorado + `git rm --cached db/custom.db` (DB descartable, sección 9); (2) `.env.example` recreado y COMMITTEADO (recetas dev/prod, semántica de rutas, escenarios A/B, dos despliegues Fase 3, estado real de READ/WRITE); (3) sandbox migrado a `DATABASE_URL=file:../db/custom.db` y verificado end-to-end (`GET /api/terminal/snapshots` 200 con la captura; dashboard leyendo de DB) | `.gitignore`, `.env.example`, `db/custom.db` (untrack), PROJECT_INDEX.md |
+| 2026-11-21 | **Decisión de despliegue: estático de un solo deploy + dato real separado del harness** (pedido explícito del autor: registrar el cambio de plan — dos despliegues → uno — para que el futuro no requiera re-analizar código). (a) El autor elige el camino sin Neon: dashboard-only sobre JSON reales; registrada la receta HOY (sección 9.1: Vercel, `APP_MODE=dashboard`, `DATA_SOURCE=fixtures`, sin DB) y las recetas futuras de terminal online (9.2 variante A: un deploy + `'all'` en prod + split READ/WRITE; variante B: dos dominios con `'dashboard'`/`'terminal'`, sin tocar appMode) + serie temporal sin DB vía manifest multi-entrada (9.3); (b) `fixtures/` reservado a los datos REALES del autor y el set sintético movido a `fixtures-synthetic/` — `fixtures:generate`/`fixtures:verify` apuntan ahí, 63/63 verificado tras el cambio; (c) hallazgo a favor: el manifest ya es un array, así que N entradas por fecha dan la serie temporal SIN DB (EvolutionCard compara consecutivas); (d) package.json: `postinstall: prisma generate` para builds de Vercel sin `DATABASE_URL`; (e) `.env.example` reordenado: receta HOY + futuras A/B | `package.json`, `.env.example`, `fixtures-synthetic/` (nuevo), `scripts/generate-fixtures.ts`, `scripts/verify-fixtures.ts`, `PROJECT_INDEX.md` |

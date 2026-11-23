@@ -1,5 +1,6 @@
 // FILE: scripts/generate-fixtures.ts
-// Genera fixtures sintéticos (fixtures/a.json, b.json, manifest.json) con la
+// Genera el harness sintético (fixtures-synthetic/a.json, b.json, manifest.json)
+// con la
 // MISMA estructura de la plataforma y los valores de referencia de la sección 8
 // del brief técnico. Sirven para desarrollar y demostrar sin los JSON reales;
 // cuando existan los crudos reales, se reemplazan sin tocar código.
@@ -384,13 +385,13 @@ const manifest = [
 // Escritura
 // ---------------------------------------------------------------------------
 
-const fixturesDir = path.join(process.cwd(), 'fixtures');
+const fixturesDir = path.join(process.cwd(), 'fixtures-synthetic');
 fs.mkdirSync(fixturesDir, { recursive: true });
 fs.writeFileSync(path.join(fixturesDir, 'a.json'), JSON.stringify(fileA, null, 1), 'utf-8');
 fs.writeFileSync(path.join(fixturesDir, 'b.json'), JSON.stringify(fileB, null, 1), 'utf-8');
 fs.writeFileSync(path.join(fixturesDir, 'manifest.json'), JSON.stringify(manifest, null, 2), 'utf-8');
 
-console.log('✔ fixtures generados en ./fixtures');
+console.log('✔ fixtures sintéticos generados en ./fixtures-synthetic (harness de regresión; los datos REALES del autor viven en ./fixtures)');
 console.log(`  a.json: ${pageA.length} edges (offsets 0–499, hasNextPage: true) + event + contentFilterForm`);
 console.log(`  b.json: ${pageB.length} edges (offsets 500–599, hasNextPage: false)`);
 console.log(`  manifest: 1 captura ${manifest[0].capturedAt}`);
